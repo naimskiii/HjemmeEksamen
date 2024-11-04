@@ -97,6 +97,121 @@ nav ul li a:hover::after {
     z-index: -1;                        /* img behinde the content */
 }
 
+/*The title of the page*/
+
+.Title{
+
+}
+.subtext{
+    margin-top:10px;
+    color: #555;
+    font-size:1em;
+
+}
+/*The first section of main "studyInformation"*/
+
+.studyInformation{
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.studyInformation div{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.arrow{
+    font-size:1.2em;
+    color:rgb(120, 0, 0);
+    margin: 15px;
+}
+
+.studyInformation h2{
+    font-size: 1.2em;
+    color:#333;
+    font-weight: normal;
+}
+
+/* Contact us */
+
+.advisory-section {
+
+    text-align: center;
+    padding: 20px;
+    background-color:white;
+    border-radius: 6px;
+    box-shadow: 0 4 px white;
+    max-width: 300px;
+
+}
+
+
+.main-heading {
+
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 8px;
+
+}
+
+.subtitle {
+
+    font-size: 0.8em;
+    color: black;
+    margin-bottom: 15px;
+
+}
+
+.contact-button {
+
+    display: inline-block;
+    padding: 7px 16px;
+    font-size: 0.9em;
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    margin-bottom: 9px;
+
+
+}
+
+.contact-button:hover {
+
+    background-color: white;
+
+}
+
+.back-link {
+
+   display: block;
+   font-size: 0.8em;
+   color: black;¨
+   text-decoration: none;
+   margin-top: 9px;
+
+}
+
+.back-link:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
 
 /* Conteiner for the boxes */
 .studyBoxes {
