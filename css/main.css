@@ -213,6 +213,34 @@ nav ul li a:hover::after {
 
 
 
+/* Conteiner for the boxes */
+.studyBoxes {
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* Style for each box */
+.InformationBox {
+    background-color: #d32f2f;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bakgrunnsbilde */
+
+comitter
+fetcher og puller
+også pusher
+
+
+
 
 /*--SLUTT AV INDEX*/
 
