@@ -97,7 +97,12 @@ nav ul li a:hover::after {
     z-index: -1;                        /* img behinde the content */
 }
 
+.footorleft {
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
 
+}
 
 /*--SLUTT AV INDEX*/
 
