@@ -97,6 +97,10 @@ nav ul li a:hover::after {
     z-index: -1;                        /* img behinde the content */
 }
 
+.footorleft {
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
 /*The title of the page*/
 
 .Title{
@@ -235,6 +239,7 @@ nav ul li a:hover::after {
 
 
 
+}
 
 /*--SLUTT AV INDEX*/
 
