@@ -198,7 +198,6 @@ nav ul li a:hover::after {
    color: black;¨
    text-decoration: none;
    margin-top: 9px;
-
 }
 
 .back-link:hover {
@@ -206,8 +205,6 @@ nav ul li a:hover::after {
     text-decoration: underline;
 
 }
-
-
 
 
 
