@@ -101,6 +101,7 @@ nav ul li a:hover::after {
     background-color: white;
     text-align: left;
     padding-left: 1rem;
+}
 /*The title of the page*/
 
 .Title{
@@ -235,11 +236,18 @@ nav ul li a:hover::after {
 }
 
 /* Bakgrunnsbilde */
-
-
-
-
+.boxImage {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
+
+#box1 .boxImage {
+    background-image: url();
+}
+
+
+
 
 /*--SLUTT AV INDEX*/
 
