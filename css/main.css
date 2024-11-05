@@ -3,7 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -15,97 +14,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* Styles for class index - title, h1 and the subtext */
-.index-title {
-    text-align: left;
-    margin-bottom: 30px;
-}
-.index-title h1 {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 110px;
-}
-
-.index-title .subtext {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/* Grid - layout for studyinformation */
-.studyInformation {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* 4 columns*/
-    gap: 5px;
-    padding: 10px;
-    margin: 100px auto;
-    max-width: 1200px;
-    text-align: center;
-    border: 2px solid #800020;         /*Ytre ramme for hele grid*/
-    background-color: #ffe5b4;
-}
-
-/*Style for each info - item with table borders*/
-.info-item {
-    border: 1px solid #ccc;
-    padding: 15px 10px;
-    text-align: center;
-    background-color: #FFAA00;
-    color: #5B3A29;
-}
-.info-item:hover {
-    background-color: #FFA500;
-}
-
-/* Place for each item in the grid */
-.study-location {
-    grid-column: 1;
-    grid-row: 1;
-}
-.duration {
-    grid-column: 2;
-    grid-row: 1;
-}
-.scope {
-    grid-column: 3;
-    grid-row: 1;
-}
-.study-points {
-    grid-column: 4;
-    grid-row: 1;
-}
-.program-start {
-    grid-column: 1;
-    grid-row: 2;
-}
-.language {
-    grid-column: 2 / span 2;
-    grid-row: 2;
-}
-.amount-of-people {
-    grid-column: 4;
-    grid-row: 2;
-}
-
-.info-item h2 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: white;
-}
-
-.info-item p {
-    font-size: 0.9em;
-    color: #333333;
-}
-
-
-
-
-
-
-
 
 /* CSS for Navigation - Bar */
 
@@ -159,10 +67,13 @@ nav ul li a::after {
     transition: 0.3s ease;
 }
 
-/* When the mouse is over the linkm the line expands  */
+/* When the mouse is over the link the line expands  */
 nav ul li a:hover::after {
     width: 100%;
 }
+
+/* END - Navigation bar */
+
 
 /* Background Main OsloMet Img */
 .backgroung_OsloMet {
@@ -183,21 +94,135 @@ nav ul li a:hover::after {
     z-index: -1;                        /* img behinde the content */
 }
 
+
+
+/* Styles for class index - title, h1 and the subtext */
+.index-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.index-title h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.index-title .subtext {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Grid - layout for studyinformation */
+.studyInformation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin: 100px auto;
+    max-width: 1200px;
+    text-align: center;
+    border: 2px solid #800020;         /*Ytre ramme for hele grid*/
+    background-color: #ffe5b4;
+}
+
+/*Style for each info - item with table borders*/
+.info-item {
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #F5F5DC;
+    color: #5B3A29;
+}
+.info-item:hover {
+    background-color: #eed9c4;
+}
+
+/* Place for each item in the grid */
+.study-location {
+    grid-column: 1;
+    grid-row: 1;
+}
+.duration {
+    grid-column: 2;
+    grid-row: 1;
+}
+.scope {
+    grid-column: 3;
+    grid-row: 1;
+}
+.study-points {
+    grid-column: 4;
+    grid-row: 1;
+}
+.program-start {
+    grid-column: 1;
+    grid-row: 2;
+}
+.language {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+.amount-of-people {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.info-item h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.info-item p {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+
+
+/* Style the conteiner for the boxes */
+.studyBoxes {
+    display: flex;
+    gap: 20px;
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* Style for each box */
+.InformationBox {
+    background-color: #d32f2f;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bakgrunnsbilde */
+.boxImage {
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#box1 .boxImage {
+    background-image: url();
+}
+
+
+
+
+
+
+
 .footorleft {
     background-color: white;
     text-align: left;
     padding-left: 1rem;
-}
-/*The title of the page*/
-
-.Title{
-
-}
-.subtext{
-    margin-top:10px;
-    color: #555;
-    font-size:1em;
-
 }
 
 
@@ -265,41 +290,6 @@ nav ul li a:hover::after {
 
     text-decoration: underline;
 
-}
-
-
-
-
-
-/* Conteiner for the boxes */
-.studyBoxes {
-    display: flex;
-    gap: 20px;
-    max-width: 90%;
-    padding: 20px;
-}
-
-/* Style for each box */
-.InformationBox {
-    background-color: #d32f2f;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Bakgrunnsbilde */
-.boxImage {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-#box1 .boxImage {
-    background-image: url();
 }
 
 
