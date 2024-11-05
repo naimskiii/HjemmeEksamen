@@ -1,12 +1,13 @@
-div.Studieinfo {
-
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    margin: 100px;
-    
+/* To make scrolling smoother on all pages */
+html {
+    scroll-behavior: smooth;
 }
 
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 /* Styles all elements across all pages */
 * {
@@ -15,10 +16,90 @@ div.Studieinfo {
     padding: 0;
 }
 
-body {
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
+/* Styles for class index - title, h1 and the subtext */
+.index-title {
+    text-align: left;
+    margin-bottom: 30px;
 }
+.index-title h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.index-title .subtext {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Grid - layout for studyinformation */
+.studyInformation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns*/
+    gap: 0;
+    padding: 10px;
+    margin: 100px auto;
+    max-width: 1200px;
+    text-align: center;
+    border: 2px solid #ccc;         /*Ytre ramme for hele grid*/
+}
+
+/*Style for each info - item with table borders*/
+.info-item {
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Place for each item in the grid */
+.study-location {
+    grid-column: 1;
+    grid-row: 1;
+}
+.duration {
+    grid-column: 2;
+    grid-row: 1;
+}
+.scope {
+    grid-column: 3;
+    grid-row: 1;
+}
+.study-points {
+    grid-column: 4;
+    grid-row: 1;
+}
+.program-start {
+    grid-column: 1;
+    grid-row: 2;
+}
+.language {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+.amount-of-people {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.info-item h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+
+
 
 
 /* CSS for Navigation - Bar */
@@ -113,37 +194,7 @@ nav ul li a:hover::after {
     font-size:1em;
 
 }
-/*The first section of main "studyInformation"*/
 
-.studyInformation{
-    max-width: 600px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-.studyInformation div{
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-
-}
-
-.arrow{
-    font-size:1.2em;
-    color:rgb(120, 0, 0);
-    margin: 15px;
-}
-
-.studyInformation h2{
-    font-size: 1.2em;
-    color:#333;
-    font-weight: normal;
-}
 
 /* Contact us */
 
