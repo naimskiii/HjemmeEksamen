@@ -308,7 +308,7 @@ nav ul li a:hover::after {
     margin: 0 10px;
 }
 
-.fa{
+.fa fa-Instagram, .fa fa-Facebook, .fa fa-LinkedIn {
     margin-right: 5px;
 }
 
