@@ -298,8 +298,8 @@ nav ul li a:hover::after {
     margin: 0;
 }
 
-.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial a:hover{
-    text-decoration: none;
+.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
+    text-decoration: underline;
 }
 
 .footerSocial a, .footerContact a, .footerExternal a{
