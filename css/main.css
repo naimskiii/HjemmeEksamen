@@ -299,7 +299,7 @@ nav ul li a:hover::after {
 }
 
 .footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footerSocial a{
