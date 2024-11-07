@@ -271,65 +271,35 @@ nav ul li a:hover::after {
     padding:0 20px;
 }
 
-/*Styling for the contact info*/
-.footorContact {
-    flex:1;
-    text-align: left;
-}
-
-.footor-Contact h3.contact{
-    font-weight: bold;
-    margin: 10px;
-}
-.footerContact ul{
-    list-style-type:none;
-    padding: 0;
-    margin: 0;
-}
-.footerContact ul li a:hover{
-    text-decoration: underline;
-}
-
-.footerExternal h3{
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footerExternal ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footerExternal ul li {
-    margin:5px 0;
-}
-
-.footerExternal ul li a{
-    color:white;
-    text-decoration: none;
-}
-
-.footerExternal ul li a:hover{
-    text-decoration: underline;
-}
-/*styling for external websites*/
-
-.footerExternal{
-    text-align: center ;
+.footerContact, .footerSocial, .footerExternal{
     flex: 1;
 }
 
-
-/*Style for social media*/
+.footerContact{
+    text-align: left;
+}
 
 .footerSocial{
-    flex:1;
     text-align: right;
 }
-.footerSocial h3.social{
+
+.footerExternal{
+    text-align: center;
+
+}
+.footerContact h3, .footerExternal h3, .footerSocial h3 {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.footerContact ul, .footerExternal ul{
+    list-style-type:none;
+    padding:0;
+    margin: 0;
+}
+
+.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial a:hover{
+    text-decoration: underline;
 }
 
 .footerSocial a{
@@ -338,13 +308,10 @@ nav ul li a:hover::after {
     margin: 0 10px;
 }
 
-.footerSocial a:hover{
-    text-decoration: underline;
-}
-
 .fa{
     margin-right: 5px;
 }
+
 /*--SLUTT AV INDEX*/
 
 
