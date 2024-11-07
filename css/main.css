@@ -178,49 +178,13 @@ nav ul li a:hover::after {
 }
 
 
+/*SCROLLE GREIA*/
 
-/* Style the conteiner for the boxes */
-.studyBoxes {
-    display: flex;
-    gap: 20px;
-    max-width: 90%;
-    padding: 20px;
-}
 
-/* Style for each box */
-.InformationBox {
-    background-color: #d32f2f;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Bakgrunnsbilde */
-.boxImage {
-    height: 50px;
-    background-size: cover;
-    background-position: center;
-}
-
-#box1 .boxImage {
-    background-image: url();
-}
+/*BUTTON- ANDRE UTDANNINGER*/
 
 
 
-
-
-
-
-.footorleft {
-    background-color: white;
-    text-align: left;
-    padding-left: 1rem;
-}
 
 
 /* Contact us */
@@ -289,6 +253,12 @@ nav ul li a:hover::after {
 
 }
 
+/*STYLE FOR FOOTER*/
+.footorleft {
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+}
 
 
 
