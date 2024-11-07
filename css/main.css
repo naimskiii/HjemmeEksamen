@@ -302,7 +302,7 @@ nav ul li a:hover::after {
     text-decoration: none;
 }
 
-.footerSocial a{
+.footerSocial a, .footerContact a, .footerExternal a{
     color:white;
     text-decoration: none;
     margin: 0 10px;
