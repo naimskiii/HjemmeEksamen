@@ -261,7 +261,7 @@ nav ul li a:hover::after {
     padding: 20px;
     color: white;
 }
-
+/*Styling for the whole footer container*/
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -271,12 +271,13 @@ nav ul li a:hover::after {
     padding:0 20px;
 }
 
+/*Styling for the contact info*/
 .footorContact {
     flex:1;
     text-align: left;
 }
 
-.footor-Contact p.contact{
+.footor-Contact h3.contact{
     font-weight: bold;
     margin: 10px;
 }
@@ -289,11 +290,44 @@ nav ul li a:hover::after {
     text-decoration: underline;
 }
 
+.footerExternal h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footerExternal ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerExternal ul li {
+    margin:5px 0;
+}
+
+.footerExternal ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.footerExternal ul li a:hover{
+    text-decoration: underline;
+}
+/*styling for external websites*/
+
+.footerExternal{
+    text-align: center ;
+    flex: 1;
+}
+
+
+/*Style for social media*/
+
 .footerSocial{
     flex:1;
     text-align: right;
 }
-.footerSocial p.social{
+.footerSocial h3.social{
     font-weight: bold;
     margin-bottom: 10px;
 }
