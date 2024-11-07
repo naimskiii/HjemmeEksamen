@@ -93,15 +93,6 @@ nav ul li a:hover::after {
     transform: translate(-50%, -50%);   /* Centers img */
     z-index: -1;                        /* img behinde the content */
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*The title of the page*/
-
-.Title{
-
-=======
-=======
->>>>>>> bcc44b69fa8616613abf3b60f80396dd0ec71a96
 
 
 
@@ -109,10 +100,6 @@ nav ul li a:hover::after {
 .index-title {
     text-align: left;
     margin-bottom: 30px;
-<<<<<<< HEAD
->>>>>>> 08da22301d4183088439bc7a470075d563afadf3
-=======
->>>>>>> bcc44b69fa8616613abf3b60f80396dd0ec71a96
 }
 .index-title h1 {
     font-size: 2.5em;
@@ -285,39 +272,16 @@ nav ul li a:hover::after {
 }
 
 .footerContact, .footerSocial, .footerExternal{
-<<<<<<< HEAD
-    flex: 1;
-}
-
-.footerContact{
-    text-align: left;
-}
-
-<<<<<<< HEAD
-.footorleft {
-    background-color: white;
-    text-align: left;
-    padding-left: 1rem;
-=======
     flex: 2;
 }
->>>>>>> bcc44b69fa8616613abf3b60f80396dd0ec71a96
 
 .footerContact{
     text-align: left;
 }
 
-<<<<<<< HEAD
-=======
 .footerSocial{
     text-align: right;
 }
->>>>>>> 08da22301d4183088439bc7a470075d563afadf3
-=======
-.footerSocial{
-    text-align: right;
-}
->>>>>>> bcc44b69fa8616613abf3b60f80396dd0ec71a96
 
 .footerExternal{
     text-align: center;
@@ -334,19 +298,11 @@ nav ul li a:hover::after {
     margin: 0;
 }
 
-<<<<<<< HEAD
-.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial a:hover{
-    text-decoration: none;
-}
-
-.footerSocial a{
-=======
 .footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
     text-decoration: underline;
 }
 
 .footerSocial a, .footerContact a, .footerExternal a{
->>>>>>> bcc44b69fa8616613abf3b60f80396dd0ec71a96
     color:white;
     text-decoration: none;
     margin: 0 10px;
@@ -357,7 +313,3 @@ nav ul li a:hover::after {
 }
 
 /*--SLUTT AV INDEX*/
-
-
-
-
