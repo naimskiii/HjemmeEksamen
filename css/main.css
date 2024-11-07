@@ -1,18 +1,6 @@
-div.Studieinfo {
-
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    margin: 100px;
-    
-}
-
-
-/* Styles all elements across all pages */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* To make scrolling smoother on all pages */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +8,12 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Styles all elements across all pages */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* CSS for Navigation - Bar */
 
@@ -73,10 +67,13 @@ nav ul li a::after {
     transition: 0.3s ease;
 }
 
-/* When the mouse is over the linkm the line expands  */
+/* When the mouse is over the link the line expands  */
 nav ul li a:hover::after {
     width: 100%;
 }
+
+/* END - Navigation bar */
+
 
 /* Background Main OsloMet Img */
 .backgroung_OsloMet {
@@ -96,53 +93,106 @@ nav ul li a:hover::after {
     transform: translate(-50%, -50%);   /* Centers img */
     z-index: -1;                        /* img behinde the content */
 }
-
-.footorleft {
-    background-color: white;
-    text-align: left;
-    padding-left: 1rem;
+<<<<<<< HEAD
 /*The title of the page*/
 
 .Title{
 
+=======
+
+
+
+/* Styles for class index - title, h1 and the subtext */
+.index-title {
+    text-align: left;
+    margin-bottom: 30px;
+>>>>>>> 08da22301d4183088439bc7a470075d563afadf3
 }
-.subtext{
-    margin-top:10px;
-    color: #555;
-    font-size:1em;
-
-}
-/*The first section of main "studyInformation"*/
-
-.studyInformation{
-    max-width: 600px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-.studyInformation div{
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
-
+.index-title h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 110px;
 }
 
-.arrow{
-    font-size:1.2em;
-    color:rgb(120, 0, 0);
-    margin: 15px;
-}
-
-.studyInformation h2{
+.index-title .subtext {
     font-size: 1.2em;
-    color:#333;
-    font-weight: normal;
+    text-align: center;
 }
+
+/* Grid - layout for studyinformation */
+.studyInformation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin: 100px auto;
+    max-width: 1200px;
+    text-align: center;
+    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
+    background-color: #ffe5b4;
+}
+
+/*Style for each info - item with table borders*/
+.info-item {
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #F5F5DC;
+    color: #5B3A29;
+}
+
+/* Place for each item in the grid */
+.study-location {
+    grid-column: 1;
+    grid-row: 1;
+}
+.duration {
+    grid-column: 2;
+    grid-row: 1;
+}
+.scope {
+    grid-column: 3;
+    grid-row: 1;
+}
+.study-points {
+    grid-column: 4;
+    grid-row: 1;
+}
+.program-start {
+    grid-column: 1;
+    grid-row: 2;
+}
+.language {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+.amount-of-people {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.info-item h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.info-item p {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+
+/*SCROLLE GREIA*/
+
+
+/*BUTTON- ANDRE UTDANNINGER*/
+
+
+
+
 
 /* Contact us */
 
@@ -210,35 +260,72 @@ nav ul li a:hover::after {
 
 }
 
+/*STYLE FOR FOOTER*/
 
 
-
-
-/* Conteiner for the boxes */
-.studyBoxes {
-    display: flex;
-    gap: 20px;
-    max-width: 90%;
+#footer{
+    background-color: rgb(128, 0, 0);
     padding: 20px;
-}
-
-/* Style for each box */
-.InformationBox {
-    background-color: #d32f2f;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
     color: white;
+}
+/*Styling for the whole footer container*/
+.footer-container{
     display: flex;
-    flex-direction: column;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
 }
 
-/* Bakgrunnsbilde */
+.footerContact, .footerSocial, .footerExternal{
+    flex: 1;
+}
+
+.footerContact{
+    text-align: left;
+}
+
+<<<<<<< HEAD
+.footorleft {
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
 
 
+=======
+.footerSocial{
+    text-align: right;
+}
+>>>>>>> 08da22301d4183088439bc7a470075d563afadf3
 
+.footerExternal{
+    text-align: center;
 
+}
+.footerContact h3, .footerExternal h3, .footerSocial h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footerContact ul, .footerExternal ul{
+    list-style-type:none;
+    padding:0;
+    margin: 0;
+}
+
+.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial a:hover{
+    text-decoration: none;
+}
+
+.footerSocial a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.fa .fa-Instagram, .fa .fa-Facebook, .fa .fa-LinkedIn {
+    margin-right: 5px;
 }
 
 /*--SLUTT AV INDEX*/
