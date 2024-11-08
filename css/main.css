@@ -1,3 +1,35 @@
+/* header styles for larger screens */
+
+@media (min-width: 701px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    /*MANGLER HEADER IMG*/
+}
+
+    /* header styles for smaller screens */
+@media (max-width: 700px) {
+    .header {
+        list-style-type: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        overflow: hidden;
+        max-height: 0; /* Hidden by default */
+        transition: max-height 0.3s ease; /* Smooth slide down transition */
+    }
+    /*MANGLER HEADER IMG*/
+}
+
+
+
+
+
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
