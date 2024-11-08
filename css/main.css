@@ -399,21 +399,6 @@ h1{
 /* activity page*/
 
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- 
-  }
-
-
-  body {
-
- background-color: white;
- font-family: 'Courier New', Courier, monospace;
- color: black;
-  }
-
 
   .actitvity-header {
    background-color:darkblue ;
