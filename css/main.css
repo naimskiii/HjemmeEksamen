@@ -383,10 +383,83 @@ h1{
 
 
 
-/*!--------dette er github
+/*!--------dette er github*/
 
 
 
+
+
+
+:root{
+    --siteburgundy: beige;
+}
+
+body {
+    margin: 0;
+    front-family: Helvetica,Arial, sans-serif
+
+}
+
+
+
+
+h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+
+.ingress {
+    font-weight: 700;
+    color: rgb(88, 8, 0);
+
+
+}
+
+header {
+    background-color: var(--siteburgundy);
+    color: blueviolet;
+    line-height: 1.4rem;
+    font-size: 0.9em;
+}
+
+
+article, aside{
+    margin-left: 2rem;
+}
+
+aside {
+    background-color: aliceblue;
+    padding-left: 1cm;
+    padding-top:0.1cm;
+    padding-bottom: 0.25;
+}
+
+.secondbox {
+    
+    background-image:url("../images/makerspace.jpg") ;
+    background-size:cover;
+    width: 90vw;
+    font-size: 1.9rem;
+
+
+}
+
+aside > p {
+    font-family: "Times New Roman",'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: large;
+
+}
+
+footer > div {
+    margin-left:2rem;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem;
+    border-style: dashed;
+    font-size: smaller;
+}
 
 
 
