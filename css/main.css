@@ -399,75 +399,95 @@ h1{
 /* activity page*/
 
 
-.actitvity-header {
-    background-color:darkblue ;
-    color: white;
+/* Main container for basketball page */
+.basketball-page {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+.basketball-page .basketball-header {
+    background-color: #0b3d91;
+    color: #fff;
     text-align: center;
     padding: 40px;
-   }
+}
+
+.basketball-page .basketball-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.basketball-page .basketball-header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Navigation links */
+.basketball-page nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.basketball-page nav ul li {
+    margin: 0 15px;
+}
+
+.basketball-page nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.basketball-page nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections styling */
+.basketball-page section {
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section headers */
+.basketball-page h2 {
+    font-size: 1.8em;
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
+
+/* Text and links */
+.basketball-page p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.basketball-page a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.basketball-page a:hover {
+    text-decoration: underline;
+}
+
+/* Image gallery */
+.basketball-page .images-basketball {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.basketball-page .images-basketball img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  
- .actitvity-header h1 {
-     font-size: 2.6em;
-     margin: bottom 10px; ;
- } 
- 
- .actitvity-Page p {
-     font-size: 1.3em;
-     font-style: italic;
- }
- 
- .actitvity-Page {
-  padding: 25px;
-  max-width: 850px;
-  margin: 0 auto;
- }
- 
- section {
-     margin-bottom: 30px;
- }
- 
- h2 {
-     font-size: 1.9em;
-     color: darkblue;
-     margin-bottom: 10px;
- 
- }
- 
- p { 
-     font-size: 1em;
-     line-height: 1.6;
-     margin-bottom: 10px;
- 
- }
- 
- a {
-  color: #e63946;
- text-decoration: none;
- 
- }
- 
- a:hover {
- 
-     text-decoration: underline;
- 
- }
- 
- .image-gallery {
- 
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 10px;
- margin-top: 10px;
- margin-bottom: 10px;
- 
- }
- 
- .image-gallery img {
- width: 100%;
- border-radius: 8px;
- box-shadow: 0 4px 8px rgba(red, green, blue, 0.2);
- 
- }
- 
- 
- 
+}
