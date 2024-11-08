@@ -399,20 +399,48 @@ h1{
 /* activity page*/
 
 
-.study_abroad {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+  }
+
+
+  body {
+
+ background-color: white;
+ font-family: 'Courier New', Courier, monospace;
+ color: black;
+  }
+
+
+  .actitvity-header {
+   background-color:darkblue ;
+   color: white;
+   text-align: center;
+   padding: 40px;
+  }
+
+.actitvity-header h1 {
+    font-size: 2.6em;
+    margin: bottom 10px; ;
+} 
+
+
+.actitvity-Page p {
+    font-size: 1.3em;
+    font-style: italic;
 }
 
-.study_abroad img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width : 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    transform: translate(-50%, -50%);   /* Centers img */
-    z-index: -1;    
+.actitvity-Page {
+ padding: 25px;
+ max-width: 850px;
+ margin: 0 auto;
 }
+
+
+
+
+
+
