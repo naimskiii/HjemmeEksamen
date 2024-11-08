@@ -225,16 +225,17 @@ nav ul li a:hover::after {
 /* Contact us */
 
 .advisory-section {
-
-    text-align: center;
     padding: 20px;
     background-color:white;
     border-radius: 6px;
     box-shadow: 0 4 px white;
-    max-width: 300px;
+    max-width: 500px;
 
 }
 
+.content{
+    padding: 10px;
+}
 
 .main-heading {
 
@@ -263,13 +264,12 @@ nav ul li a:hover::after {
     border-radius: 4px;
     transition: background-color 0.5s ease;
     margin-bottom: 9px;
-
-
 }
 
 .contact-button:hover {
 
-    background-color: white;
+    background-color: #f5bf42;
+    color:#800020;
 
 }
 
