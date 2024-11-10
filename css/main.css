@@ -38,6 +38,7 @@ html {
 body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 100px; /*endring av Sulekha*/
 }
 
 /* Styles all elements across all pages */
@@ -372,6 +373,14 @@ article{
 
 section{
     margin: 2rem;
+}
+
+.github_1 img{
+    max-width: 300px;
+    height: auto;
+    margin-top: 30;
+    display: block;
+    margin-left: auto;
 }
 
 h1{
