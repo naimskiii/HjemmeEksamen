@@ -59,7 +59,7 @@ header {
     display: flex;
     align-items: center;    /* Vertical centering of logo and navigation */
     padding: 0 2em;
-    z-index: 10;
+    z-index: 5;
 }
 
 /* Design for the OsloMet logo */
@@ -360,6 +360,15 @@ nav ul li a:hover::after {
 
 
 /*!--------dette er github*/
+
+main{
+    margin-top: 20px
+}
+
+article{
+    padding: 20px;
+    overflow: hidden;
+}
 
 section{
     margin: 2rem;
