@@ -226,7 +226,9 @@ nav ul li a:hover::after {
     color: black;
     font-size: 2em;
     margin-bottom: 10px;
+    text-align: center;
 }
+
 
 /* Container for horizontal scrolling*/
 .application-container {
