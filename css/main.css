@@ -29,6 +29,7 @@
 
 
 
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -39,7 +40,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px; 
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 12px;
 }
 
 /* Styles all elements across all pages */
@@ -62,7 +63,7 @@ header {
     align-items: center;    /* Vertical centering of logo and navigation */
     padding: 10px;
     z-index: 5;
-    justify-content:space-between;
+    justify-self: unset;
 }
 
 /* Design for the OsloMet logo */
@@ -204,67 +205,19 @@ nav ul li a:hover::after {
 }
 
 .info-item h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
 }
 
 .info-item p {
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: #333333;
 }
 
 
 /*SCROLLE GREIA*/
-.application-process {
-    padding: 20;
-    background-color: #f4f4f4;
-}
-
-.application-process h2{
-    color: black;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Container for horizontal scrolling*/
-.application-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-/*Styling for each scrolling column*/
-.application-column {
-    min-width: 300px;   /*Minste bredde for hver kolonne*/
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Gjør at kolonnen ikke krymper */
-}
-
-.application-column h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-.application-column p {
-    margin: 0 0 10px;
-}
-
-.application-column ul {
-    padding-left: 20px;
-    margin: 0;
-}
-
-.application-column ul li {
-    margin-bottom: 5px;
-}
-
-
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
@@ -415,43 +368,57 @@ nav ul li a:hover::after {
 main{
     margin-top: 20px
 }
-
+.mainbox{
+    width: 80%;
+    max-width: 12000;
+    text-align: center;
+    justify-self:center;
+}
 article{
     padding: 20px;
     overflow: hidden;
+}
+.ingress{
+    font-weight: 700;
+    color: #333;
+    width: 90%;
+    max-width: 12000;
+    text-align: center
 }
 
 section{
     margin: 2rem;
 }
 
-.github_1,.github_2,.github_3,.github_4,.github_5{
-    max-width: 450px;
+.github_1 img{
+    max-width: 300px;
     height: auto;
     margin-top: 30;
     display: block;
-    margin-left: auto;
+    margin:0px auto;
 }
+
 .text-beside-image{
-    max-width: 500px;
+    font-size: 0.9rem;
+    display: block;
+    color:#555;
 }
 
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
-    font-size: 1.9rem;
+    font-size: 3.5rem;
 }
-.ingress{
-    font-weight: 700;
-    color: #333;
-}
+
+
  h2 {
-    font-size: 22px;
+    font-size: 1.9rem;
     color: #2232;
     margin-bottom: 15px;
+    display: block;
  }
  p, .list li {
-    font-size: 1em;
+    font-size: 1.9rem;
     color: #333;
 }
 .list {
@@ -461,9 +428,9 @@ h1{
     background-color:#fff;
 
 }
-
-
-
+¨
+/**GRID**/ @media (max-width: 839px){
+} 
 
 
 
