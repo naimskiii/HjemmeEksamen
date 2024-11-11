@@ -29,7 +29,6 @@
 
 
 
-
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -40,7 +39,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px; 
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 25px;
 }
 
 /* Styles all elements across all pages */
@@ -227,7 +226,6 @@ nav ul li a:hover::after {
     color: black;
     font-size: 2em;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 /* Container for horizontal scrolling*/
@@ -265,7 +263,6 @@ nav ul li a:hover::after {
 .application-column ul li {
     margin-bottom: 5px;
 }
-
 
 
 
@@ -429,23 +426,20 @@ section{
 }
 
 .github_1,.github_2,.github_3,.github_4,.github_5{
-    max-width: 100px;
+    max-width: 450px;
     height: auto;
     margin-top: 30;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
+    display: block;
+    margin-left: auto;
 }
 .text-beside-image{
     max-width: 500px;
-    font-size: 1.0rem;
-    color: #333333;
 }
 
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
-    font-size: 3.5rem;
+    font-size: 1.9rem;
 }
 .ingress{
     font-weight: 700;
@@ -455,7 +449,6 @@ h1{
     font-size: 22px;
     color: #2232;
     margin-bottom: 15px;
-    font-size: 2.0;
  }
  p, .list li {
     font-size: 1em;
