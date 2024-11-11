@@ -425,21 +425,24 @@ section{
     margin: 2rem;
 }
 
-.github_1 img{
-    max-width: 450px;
+.github_1,.github_2,.github_3,.github_4,.github_5{
+    max-width: 100px;
     height: auto;
     margin-top: 30;
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
 .text-beside-image{
     max-width: 500px;
+    font-size: 1.0rem;
+    color: #333333;
 }
 
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
-    font-size: 1.9rem;
+    font-size: 3.5rem;
 }
 .ingress{
     font-weight: 700;
@@ -449,6 +452,7 @@ h1{
     font-size: 22px;
     color: #2232;
     margin-bottom: 15px;
+    font-size: 2.0;
  }
  p, .list li {
     font-size: 1em;
