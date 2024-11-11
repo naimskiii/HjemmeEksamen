@@ -365,6 +365,17 @@ nav ul li a:hover::after {
 
 /*!--------dette er github*/
 
+
+github-website .body {
+ 
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f5bf42;
+    padding: 0 100px 30px 100px;
+
+}
+
+
 main{
     margin-top: 20px
 }
@@ -398,6 +409,11 @@ section{
     margin:0px auto;
 }
 
+.github_2 img,.github_3 img,.github_4 img,.github_{
+    text-align: center;
+
+}
+
 .text-beside-image{
     font-size: 0.9rem;
     display: block;
@@ -428,10 +444,6 @@ h1{
     background-color:#fff;
 
 }
-¨
-/**GRID**/ @media (max-width: 839px){
-} 
-
 
 
 
