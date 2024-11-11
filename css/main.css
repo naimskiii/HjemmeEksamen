@@ -29,7 +29,6 @@
 
 
 
-
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -205,19 +204,67 @@ nav ul li a:hover::after {
 }
 
 .info-item h2 {
-    font-size: 1em;
+    font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
 }
 
 .info-item p {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: #333333;
 }
 
 
 /*SCROLLE GREIA*/
+.application-process {
+    padding: 20;
+    background-color: #f4f4f4;
+}
+
+.application-process h2{
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Container for horizontal scrolling*/
+.application-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/*Styling for each scrolling column*/
+.application-column {
+    min-width: 300px;   /*Minste bredde for hver kolonne*/
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Gjør at kolonnen ikke krymper */
+}
+
+.application-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.application-column p {
+    margin: 0 0 10px;
+}
+
+.application-column ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.application-column ul li {
+    margin-bottom: 5px;
+}
+
+
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
