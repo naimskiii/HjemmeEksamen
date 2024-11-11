@@ -38,7 +38,9 @@ html {
 body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 100px; /*endring av Sulekha*/
+    padding-top: 100px; 
+    line-height: 1.5;
+    font-size: 12px;
 }
 
 /* Styles all elements across all pages */
@@ -59,8 +61,9 @@ header {
     top: 0;
     display: flex;
     align-items: center;    /* Vertical centering of logo and navigation */
-    padding: 0 2em;
+    padding: 10px;
     z-index: 5;
+    justify-content:space-between;
 }
 
 /* Design for the OsloMet logo */
@@ -376,7 +379,7 @@ section{
 }
 
 .github_1 img{
-    max-width: 300px;
+    max-width: 450px;
     height: auto;
     margin-top: 30;
     display: block;
@@ -400,6 +403,10 @@ h1{
     color: #2232;
     margin-bottom: 15px;
  }
+ p, .list li {
+    font-size: 1em;
+    color: #333;
+}
 .list {
     width: max(600px);
     margin: 1em;
