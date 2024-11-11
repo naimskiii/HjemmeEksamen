@@ -29,6 +29,7 @@
 
 
 
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -39,7 +40,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px; 
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 12px;
 }
 
 /* Styles all elements across all pages */
@@ -229,7 +230,6 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-
 /* Container for horizontal scrolling*/
 .application-container {
     display: flex;
@@ -265,6 +265,7 @@ nav ul li a:hover::after {
 .application-column ul li {
     margin-bottom: 5px;
 }
+
 
 
 
