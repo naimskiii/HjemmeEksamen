@@ -6,7 +6,7 @@
         flex-direction: row;
         list-style-type: none;
     }
-    /*MANGLER HEADER IMG*/
+    
 }
 
     /* header styles for smaller screens */
@@ -22,7 +22,7 @@
         max-height: 0; /* Hidden by default */
         transition: max-height 0.3s ease; /* Smooth slide down transition */
     }
-    /*MANGLER HEADER IMG*/
+    
 }
 
 
@@ -42,6 +42,12 @@ body {
     line-height: 1.5;
     font-size: 12px;
 }
+/*main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}*/
 
 /* Styles all elements across all pages */
 * {
@@ -54,7 +60,7 @@ body {
 
 /* Design for the header container */
 header {
-    position: fixed;
+    position:fixed;
     background: rgb(128, 0, 0); /* Mørk - Rød bakgrunn */
     width: 100%;
     height: 100px;
@@ -234,16 +240,22 @@ nav ul li a:hover::after {
     border-radius: 6px;
     box-shadow: 0 4 px white;
     max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 
 }
 
 .content{
     padding: 10px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .main-heading {
 
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: black;
     margin-bottom: 8px;
 
@@ -251,7 +263,7 @@ nav ul li a:hover::after {
 
 .subtitle {
 
-    font-size: 0.8em;
+    font-size: 1em;
     color: black;
     margin-bottom: 15px;
 
@@ -287,6 +299,7 @@ nav ul li a:hover::after {
     padding: 20px;
     color: white;
 }
+
 /*Styling for the whole footer container*/
 .footer-container{
     display: flex;
@@ -302,18 +315,6 @@ nav ul li a:hover::after {
     flex: 1;
 }
 
-.footerContact{
-    text-align: left;
-}
-
-
-.footorleft {
-    background-color: white;
-    text-align: left;
-    padding-left: 1rem;
-
-    
-}
 
 
 .footerContact{
@@ -323,11 +324,6 @@ nav ul li a:hover::after {
 .footerSocial{
     text-align: right;
 }
-
-.footerSocial{
-    text-align: right;
-}
-
 
 .footerExternal{
     text-align: center;
@@ -349,12 +345,30 @@ nav ul li a:hover::after {
 }
 
 .footerSocial a, .footerContact a, .footerExternal a{
+    position: relative;
     color:white;
     text-decoration: none;
     margin: 0 10px;
 }
+/* source: https://russmaxdesign.github.io/aria-label-popover/*/
+.footerSocial a:hover::after {
+    content: attr(aria-label); 
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: none;
+}
 
-.fa .fa-Instagram, .fa .fa-Facebook, .fa .fa-LinkedIn {
+.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
     margin-right: 5px;
 
     
