@@ -132,11 +132,9 @@ nav ul li a:hover::after {
     width : 100%; 
     height: 100%; 
     object-fit: cover; 
-    transform: translate(-50%, -50%);   /* Centers img */
-    z-index: -1;                       /* img behinde the content */
+    transform: translate(-50%, -50%);   
+    z-index: -1;                      
 }
-
-
 
 
 
@@ -223,7 +221,72 @@ nav ul li a:hover::after {
 }
 
 
-/*SCROLLE GREIA*/
+/*!------ Dette er for index siden  CARDS for studie Opptak informasjon-----*/
+/* Grid layout for the collapsible items */
+.collapsible-grid {
+    margin: 40px auto;
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /*3 items per row*/
+    flex-direction: column;
+    gap: 15px;
+}
+  
+/* Styling each collapsible box */
+.collapsible-item {
+    width: 100%;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), 
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+  
+/* Styling the label as the trigger */
+.collapsible-label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+}
+  
+  /* Symbol before each label */
+.collapsible-label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+  
+  /* Hide the checkboxes visually */
+input[type="checkbox"] {
+    display: none;
+}
+  
+  /* Collapsible content hidden by default */
+.collapsible-content {
+    color: #555;
+    padding: 0 15px;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s;
+}
+  
+  /* Reveal content when checkbox is checked */
+.collapsible-item input[type="checkbox"]:checked + .collapsible-label + .collapsible-content {
+    max-height: 200px;
+    padding: 15px;
+}
+  
+  /* Change label symbol when content is expanded */
+.collapsible-item input[type="checkbox"]:checked + .collapsible-label::before {
+    content: '-';
+}
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
