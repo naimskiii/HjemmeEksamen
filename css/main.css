@@ -6,7 +6,7 @@
         flex-direction: row;
         list-style-type: none;
     }
-    /*MANGLER HEADER IMG*/
+    
 }
 
     /* header styles for smaller screens */
@@ -22,8 +22,9 @@
         max-height: 0; /* Hidden by default */
         transition: max-height 0.3s ease; /* Smooth slide down transition */
     }
-    /*MANGLER HEADER IMG*/
+    
 }
+
 
 
 
@@ -39,8 +40,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px; 
     line-height: 1.5;
-    font-size: 25px;
+    font-size: 12px;
 }
+/*main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}*/
 
 /* Styles all elements across all pages */
 * {
@@ -53,7 +60,7 @@ body {
 
 /* Design for the header container */
 header {
-    position: fixed;
+    position:fixed;
     background: rgb(128, 0, 0); /* Mørk - Rød bakgrunn */
     width: 100%;
     height: 100px;
@@ -62,7 +69,7 @@ header {
     align-items: center;    /* Vertical centering of logo and navigation */
     padding: 10px;
     z-index: 5;
-    justify-content:space-between;
+    justify-self: unset;
 }
 
 /* Design for the OsloMet logo */
@@ -204,67 +211,19 @@ nav ul li a:hover::after {
 }
 
 .info-item h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
 }
 
 .info-item p {
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: #333333;
 }
 
 
 /*SCROLLE GREIA*/
-.application-process {
-    padding: 20;
-    background-color: #f4f4f4;
-}
-
-.application-process h2{
-    color: black;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Container for horizontal scrolling*/
-.application-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-/*Styling for each scrolling column*/
-.application-column {
-    min-width: 300px;   /*Minste bredde for hver kolonne*/
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Gjør at kolonnen ikke krymper */
-}
-
-.application-column h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-.application-column p {
-    margin: 0 0 10px;
-}
-
-.application-column ul {
-    padding-left: 20px;
-    margin: 0;
-}
-
-.application-column ul li {
-    margin-bottom: 5px;
-}
-
-
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
@@ -281,16 +240,22 @@ nav ul li a:hover::after {
     border-radius: 6px;
     box-shadow: 0 4 px white;
     max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 
 }
 
 .content{
     padding: 10px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .main-heading {
 
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: black;
     margin-bottom: 8px;
 
@@ -298,7 +263,7 @@ nav ul li a:hover::after {
 
 .subtitle {
 
-    font-size: 0.8em;
+    font-size: 1em;
     color: black;
     margin-bottom: 15px;
 
@@ -334,6 +299,7 @@ nav ul li a:hover::after {
     padding: 20px;
     color: white;
 }
+
 /*Styling for the whole footer container*/
 .footer-container{
     display: flex;
@@ -349,18 +315,6 @@ nav ul li a:hover::after {
     flex: 1;
 }
 
-.footerContact{
-    text-align: left;
-}
-
-
-.footorleft {
-    background-color: white;
-    text-align: left;
-    padding-left: 1rem;
-
-    
-}
 
 
 .footerContact{
@@ -370,11 +324,6 @@ nav ul li a:hover::after {
 .footerSocial{
     text-align: right;
 }
-
-.footerSocial{
-    text-align: right;
-}
-
 
 .footerExternal{
     text-align: center;
@@ -396,12 +345,30 @@ nav ul li a:hover::after {
 }
 
 .footerSocial a, .footerContact a, .footerExternal a{
+    position: relative;
     color:white;
     text-decoration: none;
     margin: 0 10px;
 }
+/* source: https://russmaxdesign.github.io/aria-label-popover/*/
+.footerSocial a:hover::after {
+    content: attr(aria-label); 
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: none;
+}
 
-.fa .fa-Instagram, .fa .fa-Facebook, .fa .fa-LinkedIn {
+.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
     margin-right: 5px;
 
     
@@ -412,46 +379,104 @@ nav ul li a:hover::after {
 
 /*!--------dette er github*/
 
-main{
-    margin-top: 20px
+/* Grid - layout for studyinformation */
+.studyInformation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin: 100px auto;
+    max-width: 1200px;
+    text-align: center;
+    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
+    background-color: #ffe5b4;
+}
+.main-body {
+    background-color: #ffffff; /* Gul bakgrunn for hele siden */
+    padding: 10px; /* Litt plass rundt hele siden */
+    border: 100px solid #e6b800;
+    background-color: white;
+    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
+
+
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 100px; 
+    line-height: 1.5;
+    font-size: 12px;
 }
 
+.main-headingheader {
+    position: fixed;
+    background: rgb(128, 0, 0); /* Mørk - Rød bakgrunn */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;    /* Vertical centering of logo and navigation */
+    padding: 10px;
+    z-index: 5;
+    justify-self: unset;
+}
+
+.mainbox{
+    width: 80%;
+    max-width: 12000;
+    text-align: center;
+    justify-self:center;
+    
+
+
+}
 article{
     padding: 20px;
     overflow: hidden;
+}
+.ingress{
+    font-weight: 700;
+    color: #333;
+    width: 90%;
+    max-width: 12000;
+    text-align: center
 }
 
 section{
     margin: 2rem;
 }
 
-.github_1,.github_2,.github_3,.github_4,.github_5{
-    max-width: 450px;
+.github_1 img{
+    max-width: 300px;
     height: auto;
     margin-top: 30;
     display: block;
-    margin-left: auto;
+    margin:0px auto;
 }
+
+.github_2 img,.github_3 img,.github_4 img,.github_{
+    text-align: center;
+
+}
+
 .text-beside-image{
-    max-width: 500px;
+    font-size: 0.9rem;
+    display: block;
+    color:#555;
 }
 
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
-    font-size: 1.9rem;
+    font-size: 3.5rem;
 }
-.ingress{
-    font-weight: 700;
-    color: #333;
-}
+
+
  h2 {
-    font-size: 22px;
+    font-size: 1.9rem;
     color: #2232;
     margin-bottom: 15px;
+    display: block;
  }
  p, .list li {
-    font-size: 1em;
+    font-size: 1.9rem;
     color: #333;
 }
 .list {
@@ -461,10 +486,6 @@ h1{
     background-color:#fff;
 
 }
-
-
-
-
 
 
 
