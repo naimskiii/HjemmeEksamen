@@ -334,13 +334,14 @@ nav ul li a:hover::after {
 
 .advisory-section {
     padding: 20px;
-    background-color:white;
-    border-radius: 6px;
-    box-shadow: 0 4 px white;
+    background-color: white;
+    border: 4px solid #FFB81C;
+    border-radius: 8px;
+    box-shadow: 0 4 px #FFB81C;
     max-width: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0;
 
 }
@@ -352,8 +353,6 @@ nav ul li a:hover::after {
 }
 
 .main-heading {
-
-    font-size: 1.5em;
     color: black;
     margin-bottom: 8px;
 
@@ -385,6 +384,30 @@ nav ul li a:hover::after {
     background-color: #f5bf42;
     color:#800020;
 
+}
+
+.faglig-leder {
+    flex: 1;
+    max-width: 35%;
+    text-align: center;
+}
+
+.faglig-leder img {
+    width: 90px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.faglig-leder h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.faglig-leder p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
 }
 
 
