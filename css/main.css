@@ -221,7 +221,7 @@ nav ul li a:hover::after {
 }
 
 
-/*!------ Dette er for index siden  CARDS for studie Opptak informasjon-----*/
+/*!------ Dette er for index siden  Collapsible for studie Opptak informasjon-----*/
 .info-collapsible {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -237,6 +237,11 @@ nav ul li a:hover::after {
     font-weight: 500;
 }
 
+.collapsible input {
+    display: none;
+
+}
+
 .collapsible label {
     position: relative;
     font-weight: 600;
@@ -248,6 +253,7 @@ nav ul li a:hover::after {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    z-index: 1;
 }
 
 /* Pilen som peker nedover når lukket */
@@ -264,7 +270,7 @@ nav ul li a:hover::after {
 
 /* Rotasjon av pil når åpen */
 .collapsible input:checked + label::after {
-    transform: translateY(-50%) rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .collapsible-text {
@@ -273,6 +279,10 @@ nav ul li a:hover::after {
     border-radius: 4px;
     line-height: 1.4;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
 /* Når checkbox er sjekket, vis teksten */
@@ -281,7 +291,10 @@ nav ul li a:hover::after {
     padding: 15px;
     background: #fff;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
 }
+
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
