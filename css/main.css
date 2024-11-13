@@ -240,7 +240,7 @@ nav ul li a:hover::after {
 .collapsible label {
     position: relative;
     font-weight: 600;
-    background: #FFD24A;
+    background: #FFC137;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     color: #1c1c6b;
     display: block;
