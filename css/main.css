@@ -338,23 +338,32 @@ nav ul li a:hover::after {
     border: 3px solid #FFB81C;
     border-radius: 8px;
     box-shadow: 0 4px #FFB81C;
-    max-width: 300px;
-    max-height: 500px;
+    max-width: 700px;
+    max-height: 450px;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center; 
     margin: 0 auto;
+    position: relative;
+    top:-60px;
     overflow: hidden; 
     
 
+}
+/*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+
+.advisory-section:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
 }
 
 .content{
     padding: 10px;
     max-width: 500px;
     box-sizing: border-box;
-    margin-top: 0px;
+    position: relative;
+    top:-60px;
 
 }
 
@@ -415,6 +424,8 @@ nav ul li a:hover::after {
 .content ul li{
     margin-bottom: 5px;
 }
+
+
 
 
 
