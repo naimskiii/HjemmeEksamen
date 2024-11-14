@@ -871,7 +871,7 @@ wrapper-page .activity-page section {
 .wrapper-page .site-footer {
     
     background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
-    color: #f1f1f1;
+    color: #fc9004;
     padding: 40px 20px;
     text-align: center;
     display: flex;
@@ -905,7 +905,7 @@ wrapper-page .activity-page section {
   }
   
   .wrapper-page .footer-links ul li a {
-    color: #f1f1f1;
+    color: #131313;
     text-decoration: none;
     font-size: 14px;
   }
@@ -920,7 +920,7 @@ wrapper-page .activity-page section {
   }
   
  .wrapper-page .social-icon {
-    color: #f1f1f1;
+    color: #ff9a16;
     text-decoration: none;
     margin: 0 10px;
     font-size: 24px;
@@ -933,7 +933,7 @@ wrapper-page .activity-page section {
   /* Legal Information */
   .wrapper-page .legal-info {
     font-size: 14px;
-    color: #cccccc;
+    color: #292727;
   }
   
   .wrapper-page .legal-info ul {
@@ -948,7 +948,7 @@ wrapper-page .activity-page section {
   }
   
   .wrapper-page .legal-info ul li a {
-    color: #cccccc;
+    color: #605c5c;
     text-decoration: none;
   }
   
