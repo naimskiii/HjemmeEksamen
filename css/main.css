@@ -132,11 +132,9 @@ nav ul li a:hover::after {
     width : 100%; 
     height: 100%; 
     object-fit: cover; 
-    transform: translate(-50%, -50%);   /* Centers img */
-    z-index: -1;                       /* img behinde the content */
+    transform: translate(-50%, -50%);   
+    z-index: -1;                      
 }
-
-
 
 
 
@@ -223,10 +221,110 @@ nav ul li a:hover::after {
 }
 
 
-/*SCROLLE GREIA*/
+/*!------ Dette er for index siden  Collapsible for studie Opptak informasjon-----*/
+.info-collapsible {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+    justify-items: center;
+}
+
+.collapsible {
+    max-width: 300px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible input {
+    display: none;
+
+}
+
+.collapsible label {
+    position: relative;
+    font-weight: 600;
+    background: #FFC137;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #1c1c6b;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Pilen som peker nedover når lukket */
+.collapsible label::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotasjon av pil når åpen */
+.collapsible input:checked + label::after {
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+/* Når checkbox er sjekket, vis teksten */
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px; /* juster høyde etter behov */
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
 
 
 /*BUTTON- ANDRE UTDANNINGER*/
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #800020;
+    width: 35rem;
+    height: 3rem;
+    margin-top: 5.5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+    border-radius: 4px; 
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Hover-effekt for knappen */
+.buttons:hover {
+    background-color: #FFB81C; /* Hover-effekt bakgrunnsfarge */
+    color: black; /* Hover-effekt tekstfarge */
+}
+
 
 
 
@@ -235,29 +333,35 @@ nav ul li a:hover::after {
 /* Contact us */
 
 .advisory-section {
-    padding: 20px;
-    background-color:white;
-    border-radius: 6px;
-    box-shadow: 0 4 px white;
-    max-width: 500px;
+    padding: 5px;
+    background-color: white;
+    border: 3px solid #FFB81C;
+    border-radius: 8px;
+    box-shadow: 0 4px #FFB81C;
+    max-width: 300px;
+    max-height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center; 
+    margin: 0 auto;
+    overflow: hidden; 
+    
 
 }
 
 .content{
     padding: 10px;
     max-width: 500px;
-    margin: auto;
+    box-sizing: border-box;
+    margin-top: 0px;
+
 }
 
 .main-heading {
-
-    font-size: 1.5em;
     color: black;
     margin-bottom: 8px;
+    font-size: 1.5em;
 
 }
 
@@ -278,8 +382,9 @@ nav ul li a:hover::after {
     background-color: darkred;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.5s ease;
+    transition: 0.5s ease;
     margin-bottom: 9px;
+    text-align: center; 
 }
 
 .contact-button:hover {
@@ -287,6 +392,28 @@ nav ul li a:hover::after {
     background-color: #f5bf42;
     color:#800020;
 
+}
+
+.content img{
+    max-width: 90px;
+    max-height: 120px;
+    margin-bottom: 15px;
+}
+
+.content h3{
+    font-size: 1.0em;
+
+}
+
+.content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.content ul li{
+    margin-bottom: 5px;
 }
 
 
@@ -298,6 +425,7 @@ nav ul li a:hover::after {
     background-color: rgb(128, 0, 0);
     padding: 20px;
     color: white;
+    margin-top: 100px;
 }
 
 /*Styling for the whole footer container*/
@@ -311,7 +439,6 @@ nav ul li a:hover::after {
 }
 
 .footerContact, .footerSocial, .footerExternal{
-
     flex: 1;
 }
 
@@ -332,12 +459,15 @@ nav ul li a:hover::after {
 .footerContact h3, .footerExternal h3, .footerSocial h3 {
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: large;
+    
 }
 
 .footerContact ul, .footerExternal ul{
     list-style-type:none;
     padding:0;
     margin: 0;
+    font-size: 0.9rem;
 }
 
 .footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
@@ -348,6 +478,7 @@ nav ul li a:hover::after {
     position: relative;
     color:white;
     text-decoration: none;
+    font-size: medium;
     margin: 0 10px;
 }
 /* source: https://russmaxdesign.github.io/aria-label-popover/*/
@@ -378,19 +509,6 @@ nav ul li a:hover::after {
 
 
 /*!--------dette er github*/
-
-/* Grid - layout for studyinformation */
-.studyInformation {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    padding: 10px;
-    margin: 100px auto;
-    max-width: 1200px;
-    text-align: center;
-    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
-    background-color: #ffe5b4;
-}
 .main-body {
     background-color: #ffffff; /* Gul bakgrunn for hele siden */
     padding: 10px; /* Litt plass rundt hele siden */
@@ -423,10 +541,8 @@ nav ul li a:hover::after {
     max-width: 12000;
     text-align: center;
     justify-self:center;
-    
-
-
 }
+
 article{
     padding: 20px;
     overflow: hidden;
@@ -456,30 +572,30 @@ section{
 
 }
 
-.text-beside-image{
+.github .text-beside-image{
     font-size: 0.9rem;
     display: block;
     color:#555;
 }
 
-h1{
+.github h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
     font-size: 3.5rem;
 }
 
 
- h2 {
+.github h2 {
     font-size: 1.9rem;
     color: #2232;
     margin-bottom: 15px;
     display: block;
  }
- p, .list li {
+.github p, .list li {
     font-size: 1.9rem;
     color: #333;
 }
-.list {
+.github .list {
     width: max(600px);
     margin: 1em;
     padding: 1em;
@@ -510,12 +626,12 @@ h1{
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.6));
+    background: linear-gradient(to bottom, rgba(90, 192, 255, 0.8), rgba(255, 255, 255, 0.6));
     backdrop-filter: blur(5px);
-    color: white;
+    color: white;   
     z-index: 1000;
     padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(245, 247, 247, 0.3);
     
 }
 
@@ -529,12 +645,14 @@ h1{
     align-items: center;
 }
 
-.wrapper-page .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: #f8b400;
-    text-decoration: none;
+.wrapper-page .logo img {
+
+    width: 100px; /* Adjust size as needed */
+    
+
+    position: fixed; margin: -0,10px -0,5px 1px -0,5px; left: 0; display:inline;
 }
+   
 
 
 
@@ -547,34 +665,68 @@ h1{
 }
 
 .wrapper-page nav ul a {
-    color: white;
+    color: rgb(254, 254, 254);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s ease;
+    font-family: monospace;
+    
 }
 
 
 .wrapper-page .nav ul li a:hover {
-    color: #f8b400;
+    color: #ffffff;
 
 }
 
 /* Hero Section Styling */
 .wrapper-page .hero {
-    background: linear-gradient(to bottom right, #333, #444);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-wrapper-page .hero h1 {
-    font-size: 36px;
+ .wrapper-page .hero-image {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Position the image behind text */
+    opacity: 0.5;
+
+}
+
+.wrapper-page .hero h1, .hero p {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-family:fantasy
+
+}
+
+.wrapper-page .hero h1 {
+
+    font-size: 48px;
     margin-bottom: 10px;
 
 }
 
-wrapper-page ..hero p {
-    font-size: 18px;
-    color: #ddd;
+.wrapper-page .hero p {
 
+    font-size: 20px;
+}
+
+
+/* Content Section */
+.content {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
