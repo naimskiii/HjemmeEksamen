@@ -450,7 +450,6 @@ nav ul li a:hover::after {
 }
 
 .footerContact, .footerSocial, .footerExternal{
-
     flex: 1;
 }
 
