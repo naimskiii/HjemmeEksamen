@@ -83,6 +83,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 1.5em;
 }
 
 /* Style for each items in the nav */
@@ -145,12 +146,13 @@ nav ul li a:hover::after {
     font-size: 3em;
     font-weight: bold;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 150px;
 }
 
 .index-title .subtext {
     font-size: 1.5em;
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Grid - layout for studyinformation */
@@ -220,14 +222,25 @@ nav ul li a:hover::after {
 
 
 /*!------ Dette er for index siden (Collapsible - section) -----*/
+.header-location h2 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-top: 150px;
+}
+.header-location p {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 25px;
+}
 
 /* Sentraliserer collapsible-seksjonen på siden */
 .collapsible-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
     padding-top: 50px;
     justify-items: center;
+    font-size: 1.2em;
 }
 
 /* Styling for hver collapsible-enhet */
@@ -257,7 +270,7 @@ nav ul li a:hover::after {
     text-align: center; /* Sentrerer teksten i label */
 }
 
-/* Oppretter pilikon som roterer når åpnet */
+/* Oppretter pluss-ikon som roterer når åpnet */
 .collapsible label::after {
     content: "+";
     position: absolute;
@@ -268,7 +281,7 @@ nav ul li a:hover::after {
     transition: transform 0.3s ease;
 }
 
-/* Roterer pil når åpnet */
+/* Roterer minus-ikon når åpnet */
 .collapsible input:checked + label::after {
     content: "-";
 }
@@ -289,14 +302,13 @@ nav ul li a:hover::after {
 
 /* Åpner innholdet når checkbox er sjekket */
 .collapsible input:checked ~ .collapsible-content {
-    max-height: 400px; 
+    max-height: 500px; 
     padding: 15px;
     opacity: 1;
 }
 
 
-
-/*BUTTON- ANDRE UTDANNINGER*/
+/*BUTTON- OTHER STUDIES*/
 .buttons {
     display: flex;
     justify-content: center;
