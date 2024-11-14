@@ -27,6 +27,9 @@
 
 
 
+
+
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -83,7 +86,6 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 1.5em;
 }
 
 /* Style for each items in the nav */
@@ -143,16 +145,15 @@ nav ul li a:hover::after {
 
 }
 .index-title h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .index-title .subtext {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
-    margin-top: 20px;
 }
 
 /* Grid - layout for studyinformation */
@@ -164,7 +165,7 @@ nav ul li a:hover::after {
     margin: 100px auto;
     max-width: 1200px;
     text-align: center;
-    border: 5px solid #800020;
+    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
     background-color: #ffe5b4;
 }
 
@@ -175,19 +176,6 @@ nav ul li a:hover::after {
     text-align: center;
     background-color: #F5F5DC;
     color: #5B3A29;
-}
-
-.info-item h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: black;
-}
-
-.info-item p {
-    font-size: 13px;
-    color: #333333;
-    margin-top: 5px;
 }
 
 /* Place for each item in the grid */
@@ -220,32 +208,30 @@ nav ul li a:hover::after {
     grid-row: 2;
 }
 
-
-/*!------ Dette er for index siden (Collapsible - section) -----*/
-.header-location h2 {
-    font-size: 2.3em;
-    text-align: center;
-    margin-top: 150px;
-}
-.header-location p {
-    font-size: 1.3em;
-    text-align: center;
-    margin-top: 25px;
+.info-item h2 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
 }
 
-/* Sentraliserer collapsible-seksjonen på siden */
-.collapsible-section {
+.info-item p {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+
+/*!------ Dette er for index siden  Collapsible for studie Opptak informasjon-----*/
+.info-collapsible {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
     padding-top: 50px;
     justify-items: center;
-    font-size: 1.2em;
 }
 
-/* Styling for hver collapsible-enhet */
 .collapsible {
-    max-width: 100%;
+    max-width: 300px;
     width: 100%;
     overflow: hidden;
     font-weight: 500;
@@ -253,62 +239,65 @@ nav ul li a:hover::after {
 
 .collapsible input {
     display: none;
+
 }
-/* Justerer label i collapsible for bedre design */
+
 .collapsible label {
     position: relative;
     font-weight: 600;
     background: #FFC137;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: black;
+    color: #1c1c6b;
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
     z-index: 1;
-    text-align: center; /* Sentrerer teksten i label */
 }
 
-/* Oppretter pluss-ikon som roterer når åpnet */
+/* Pilen som peker nedover når lukket */
 .collapsible label::after {
-    content: "+";
+    content: "";
     position: absolute;
-    left: 15px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    width: 18px;
+    height: 18px;
     transition: transform 0.3s ease;
 }
 
-/* Roterer minus-ikon når åpnet */
+/* Rotasjon av pil når åpen */
 .collapsible input:checked + label::after {
-    content: "-";
+    transform: rotate(90deg);
 }
 
-/* Styling for kollapsbart innhold */
-.collapsible-content {
+.collapsible-text {
     max-height: 0;
     overflow: hidden;
     border-radius: 4px;
     line-height: 1.4;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    background: #fff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    padding: 0 15px;
-    opacity: 0;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
     transition: all 0.3s ease;
 }
 
-/* Åpner innholdet når checkbox er sjekket */
-.collapsible input:checked ~ .collapsible-content {
-    max-height: 500px; 
+/* Når checkbox er sjekket, vis teksten */
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px; /* juster høyde etter behov */
     padding: 15px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
+    top: 0;
 }
 
 
-/*BUTTON- OTHER STUDIES*/
+
+/*BUTTON- ANDRE UTDANNINGER*/
 .buttons {
     display: flex;
     justify-content: center;
@@ -349,22 +338,16 @@ nav ul li a:hover::after {
     border: 3px solid #FFB81C;
     border-radius: 8px;
     box-shadow: 0 4px #FFB81C;
-    max-width: 700px;
-    max-height: 450px;
+    max-width: 300px;
+    max-height: 500px;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center; 
     margin: 0 auto;
-    position: relative;
-    top:-60px;
     overflow: hidden; 
-}
-/*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+    
 
-.advisory-section:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
 }
 
 .content{
@@ -372,23 +355,26 @@ nav ul li a:hover::after {
     max-width: 500px;
     box-sizing: border-box;
     margin-top: 0px;
-    position: relative;
-    top:-60px;
+
 }
 
 .main-heading {
     color: black;
     margin-bottom: 8px;
     font-size: 1.5em;
+
 }
 
 .subtitle {
+
     font-size: 1em;
     color: black;
     margin-bottom: 15px;
+
 }
 
 .contact-button {
+
     display: inline-block;
     padding: 7px 16px;
     font-size: 0.9em;
@@ -402,8 +388,10 @@ nav ul li a:hover::after {
 }
 
 .contact-button:hover {
+
     background-color: #f5bf42;
     color:#800020;
+
 }
 
 .content img{
@@ -414,6 +402,7 @@ nav ul li a:hover::after {
 
 .content h3{
     font-size: 1.0em;
+
 }
 
 .content ul{
@@ -429,9 +418,9 @@ nav ul li a:hover::after {
 
 
 
-
-
 /*STYLE FOR FOOTER*/
+
+
 #footer{
     background-color: rgb(128, 0, 0);
     padding: 20px;
@@ -452,6 +441,8 @@ nav ul li a:hover::after {
 .footerContact, .footerSocial, .footerExternal{
     flex: 1;
 }
+
+
 
 .footerContact{
     text-align: left;
@@ -510,79 +501,65 @@ nav ul li a:hover::after {
 
 .fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
     margin-right: 5px;
+
+    
 }
 
 
 
 
 /*!--------dette er github*/
-.github-site * {
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.main-body {
+    background-color: #ffffff; /* Gul bakgrunn for hele siden */
+    padding: 10px; /* Litt plass rundt hele siden */
+    border: 100px solid #e6b800;
+    background-color: white;
+    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
 
+
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 100px; 
+    line-height: 1.5;
+    font-size: 12px;
 }
 
-.github-site body {
-
-    line-height: 1.6;
-    background-color: #f9f9f4;
-    color: #333;
-    padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-
-
+.main-headingheader {
+    position: fixed;
+    background: rgb(128, 0, 0); /* Mørk - Rød bakgrunn */
+    width: 100%;
+    height: 100px;
+    top: 0;
+    display: flex;
+    align-items: center;    /* Vertical centering of logo and navigation */
+    padding: 10px;
+    z-index: 5;
+    justify-self: unset;
 }
 
-
-.github-site h1 {
-
+.mainbox{
+    width: 80%;
+    max-width: 12000;
     text-align: center;
-    font-size: 25px;
-    color: black;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-self:center;
 }
 
-.github-site .mainnr2 {
-
-    margin: 25px auto;
-    background-color: #ffffff;
-    box-shadow: 0 5px 15px rgba(127, 14, 14, 0.1);
-    padding: 25px;
-    border-radius: 8px;
-    max-width: 1000px;
+article{
+    padding: 20px;
+    overflow: hidden;
 }
-
-.github-site .ingress {
-    
-    margin: 0 auto;
-    font-style: italic;
-    font-weight: 600;
-    margin-top: 10px;
+.ingress{
+    font-weight: 700;
     color: #333;
-    width: 75%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 12000;
     text-align: center
-    
-    
-    
-    
 }
 
-.github-site .section {
-
-    padding: 25px;
-    margin: 2rem 0;
-    background-color: #0073e6;
-    border-radius: 9px;
-    color: #fff;
-    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+section{
+    margin: 2rem;
 }
 
-.github-site .github_1 img{
+.github_1 img{
     max-width: 300px;
     height: auto;
     margin-top: 30;
@@ -590,56 +567,39 @@ nav ul li a:hover::after {
     margin:0px auto;
 }
 
-.github-site .github_1 img,
-.github-site .github_2 img,
-.github-site .github_3 img,
-.github-site .github_4 img,
-.github-site .github_5 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 25px auto;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-}
-
-.github-site .text-beside-image {
-    font-size: 0.9rem;
+.github_2 img,.github_3 img,.github_4 img,.github_{
     text-align: center;
-    color:#555;
-    margin-top: 5px;
+
 }
 
-.github-site h1{
+.github .text-beside-image{
+    font-size: 0.9rem;
+    display: block;
+    color:#555;
+}
+
+.github h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 450;
     font-size: 3.5rem;
 }
 
 
-.github-site h2 {
-    padding-bottom: 10px;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #ddd;
-    color: #0057a3;
-    margin: 25px 0 15px;
-    
-   
+.github h2 {
+    font-size: 1.9rem;
+    color: #2232;
+    margin-bottom: 15px;
+    display: block;
  }
-.github-site p, .github-site .list li {
-    font-size: 1.1rem;
-    line-height: 1,8;
+.github p, .list li {
+    font-size: 1.9rem;
     color: #333;
-    margin: 0.5em 0;
 }
-.github-site .list {
-    width: 900px;
-    margin: 1em auto;
-    padding: 15px;
-    background-color:#35b21f80;
-    border-radius: 10px;
-    border-left: 5px soild #0057a3;
+.github .list {
+    width: max(600px);
+    margin: 1em;
+    padding: 1em;
+    background-color:#fff;
 
 }
 
@@ -694,103 +654,6 @@ nav ul li a:hover::after {
 }
    
 
-/* main */
-
-wrapper-page .activity-page section {
-    padding: 40px 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.wrapper-page .activity-page h2 {
-    font-size: 2em;
-    color: #333333;
-    margin-bottom: 15px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-.wrapper-page .activity-page p {
-    font-size: 1em;
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.wrapper-page .activity-page a {
-    color: #0073e6;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.wrapper-page .activity-page a:hover {
-    color: #ff3300;
-    text-decoration: underline;
-}
-
-/* Image Gallery */
-.wrapper-page .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.wrapper-page .image-gallery img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Specific Section Styling */
-.activity-intro, .basketball-history, .skills-techniques, .health-benefits {
-    padding: 30px;
-    border-radius: 8px;
-    background-color: #e9f5ff;
-}
-
-.activity-intro h2,
-.basketball-history h2,
-.skills-techniques h2,
-.health-benefits h2 {
-    color: #333;
-    margin-bottom: 10px;
-    font-family: 'Helvetica', sans-serif;
-}
-
-.activity-intro p,
-.basketball-history p,
-.skills-techniques p,
-.health-benefits p {
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Tips for Beginners Section */
-.tips-for-beginners {
-    padding: 30px;
-    background-color: #f8f9fa;
-    border-left: 5px solid #0073e6;
-}
-
-.tips-for-beginners h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-    font-family: 'Georgia', serif;
-}
-
-.tips-for-beginners p {
-    font-size: 1em;
-    color: #555;
-}
 
 
 
@@ -867,92 +730,3 @@ wrapper-page .activity-page section {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-.wrapper-page .site-footer {
-    
-    background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
-    color: #f1f1f1;
-    padding: 40px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
- .wrapper-page .footer-links {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 20px;
-  }
-  
-  .wrapper-page .footer-links section {
-    margin: 0 10px;
-  }
-  
-  .wrapper-page .footer-links h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .wrapper-page .footer-links ul {
-    list-style: none;
-  }
-  
-  .wrapper-page .footer-links ul li {
-    margin-bottom: 8px;
-  }
-  
-  .wrapper-page .footer-links ul li a {
-    color: #f1f1f1;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .wrapper-page .footer-links ul li a:hover {
-    color: #ff9800; /* Accent color */
-  }
-  
-  /* Social Media Icons */
-  .wrapper-page .social-media {
-    margin: 20px 0;
-  }
-  
- .wrapper-page .social-icon {
-    color: #f1f1f1;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 24px;
-  }
-  
-  .wrapper-page .social-icon:hover {
-    color: #ff9800;
-  }
-  
-  /* Legal Information */
-  .wrapper-page .legal-info {
-    font-size: 14px;
-    color: #cccccc;
-  }
-  
-  .wrapper-page .legal-info ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .wrapper-page .legal-info ul li {
-    margin: 0 15px;
-  }
-  
-  .wrapper-page .legal-info ul li a {
-    color: #cccccc;
-    text-decoration: none;
-  }
-  
-  .wrapper-page .legal-info ul li a:hover {
-    color: #ff9800;
-  }
-  
