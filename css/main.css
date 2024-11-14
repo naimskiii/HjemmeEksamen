@@ -665,6 +665,103 @@ section{
 }
    
 
+/* main */
+
+wrapper-page .activity-page section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper-page .activity-page h2 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper-page .activity-page p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.wrapper-page .activity-page a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapper-page .activity-page a:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+/* Image Gallery */
+.wrapper-page .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.wrapper-page .image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Section Styling */
+.activity-intro, .basketball-history, .skills-techniques, .health-benefits {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #e9f5ff;
+}
+
+.activity-intro h2,
+.basketball-history h2,
+.skills-techniques h2,
+.health-benefits h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.activity-intro p,
+.basketball-history p,
+.skills-techniques p,
+.health-benefits p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Tips for Beginners Section */
+.tips-for-beginners {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #0073e6;
+}
+
+.tips-for-beginners h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.tips-for-beginners p {
+    font-size: 1em;
+    color: #555;
+}
 
 
 
