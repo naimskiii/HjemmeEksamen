@@ -337,14 +337,22 @@ nav ul li a:hover::after {
     border: 3px solid #FFB81C;
     border-radius: 8px;
     box-shadow: 0 4px #FFB81C;
-    max-width: 300px;
-    max-height: 500px;
+    max-width: 700px;
+    max-height: 450px;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
     align-items: center; 
     margin: 0 auto;
+    position: relative;
+    top:-60px;
     overflow: hidden; 
+}
+/*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+
+.advisory-section:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
 }
 
 .content{
@@ -404,6 +412,8 @@ nav ul li a:hover::after {
 .content ul li{
     margin-bottom: 5px;
 }
+
+
 
 
 
@@ -637,6 +647,103 @@ section{
 }
    
 
+/* main */
+
+wrapper-page .activity-page section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper-page .activity-page h2 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper-page .activity-page p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.wrapper-page .activity-page a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapper-page .activity-page a:hover {
+    color: #ff3300;
+    text-decoration: underline;
+}
+
+/* Image Gallery */
+.wrapper-page .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.wrapper-page .image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Section Styling */
+.activity-intro, .basketball-history, .skills-techniques, .health-benefits {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #e9f5ff;
+}
+
+.activity-intro h2,
+.basketball-history h2,
+.skills-techniques h2,
+.health-benefits h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.activity-intro p,
+.basketball-history p,
+.skills-techniques p,
+.health-benefits p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Tips for Beginners Section */
+.tips-for-beginners {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #0073e6;
+}
+
+.tips-for-beginners h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.tips-for-beginners p {
+    font-size: 1em;
+    color: #555;
+}
 
 
 
@@ -713,3 +820,92 @@ section{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.wrapper-page .site-footer {
+    
+    background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ .wrapper-page .footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-page .footer-links section {
+    margin: 0 10px;
+  }
+  
+  .wrapper-page .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-page .footer-links ul {
+    list-style: none;
+  }
+  
+  .wrapper-page .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .wrapper-page .footer-links ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .wrapper-page .footer-links ul li a:hover {
+    color: #ff9800; /* Accent color */
+  }
+  
+  /* Social Media Icons */
+  .wrapper-page .social-media {
+    margin: 20px 0;
+  }
+  
+ .wrapper-page .social-icon {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .wrapper-page .social-icon:hover {
+    color: #ff9800;
+  }
+  
+  /* Legal Information */
+  .wrapper-page .legal-info {
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  .wrapper-page .legal-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .wrapper-page .legal-info ul li {
+    margin: 0 15px;
+  }
+  
+  .wrapper-page .legal-info ul li a {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  
+  .wrapper-page .legal-info ul li a:hover {
+    color: #ff9800;
+  }
+  
