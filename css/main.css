@@ -731,3 +731,92 @@ section{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.wrapper-page .site-footer {
+    
+    background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ .wrapper-page .footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-page .footer-links section {
+    margin: 0 10px;
+  }
+  
+  .wrapper-page .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-page .footer-links ul {
+    list-style: none;
+  }
+  
+  .wrapper-page .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .wrapper-page .footer-links ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .wrapper-page .footer-links ul li a:hover {
+    color: #ff9800; /* Accent color */
+  }
+  
+  /* Social Media Icons */
+  .wrapper-page .social-media {
+    margin: 20px 0;
+  }
+  
+ .wrapper-page .social-icon {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .wrapper-page .social-icon:hover {
+    color: #ff9800;
+  }
+  
+  /* Legal Information */
+  .wrapper-page .legal-info {
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  .wrapper-page .legal-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .wrapper-page .legal-info ul li {
+    margin: 0 15px;
+  }
+  
+  .wrapper-page .legal-info ul li a {
+    color: #cccccc;
+    text-decoration: none;
+  }
+  
+  .wrapper-page .legal-info ul li a:hover {
+    color: #ff9800;
+  }
+  
