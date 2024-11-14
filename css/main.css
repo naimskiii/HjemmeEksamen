@@ -27,9 +27,6 @@
 
 
 
-
-
-
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -145,14 +142,14 @@ nav ul li a:hover::after {
 
 }
 .index-title h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     margin-top: 110px;
 }
 
 .index-title .subtext {
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -165,7 +162,7 @@ nav ul li a:hover::after {
     margin: 100px auto;
     max-width: 1200px;
     text-align: center;
-    border: 5px solid #800020;         /*Ytre ramme for hele grid*/
+    border: 5px solid #800020;
     background-color: #ffe5b4;
 }
 
@@ -176,6 +173,19 @@ nav ul li a:hover::after {
     text-align: center;
     background-color: #F5F5DC;
     color: #5B3A29;
+}
+
+.info-item h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.info-item p {
+    font-size: 13px;
+    color: #333333;
+    margin-top: 5px;
 }
 
 /* Place for each item in the grid */
@@ -208,21 +218,11 @@ nav ul li a:hover::after {
     grid-row: 2;
 }
 
-.info-item h2 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: black;
-}
 
-.info-item p {
-    font-size: 0.9em;
-    color: #333333;
-}
+/*!------ Dette er for index siden (Collapsible - section) -----*/
 
-
-/*!------ Dette er for index siden  Collapsible for studie Opptak informasjon-----*/
-.info-collapsible {
+/* Sentraliserer collapsible-seksjonen på siden */
+.collapsible-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -230,8 +230,9 @@ nav ul li a:hover::after {
     justify-items: center;
 }
 
+/* Styling for hver collapsible-enhet */
 .collapsible {
-    max-width: 300px;
+    max-width: 100%;
     width: 100%;
     overflow: hidden;
     font-weight: 500;
@@ -239,60 +240,58 @@ nav ul li a:hover::after {
 
 .collapsible input {
     display: none;
-
 }
-
+/* Justerer label i collapsible for bedre design */
 .collapsible label {
     position: relative;
     font-weight: 600;
     background: #FFC137;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: #1c1c6b;
+    color: black;
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
     z-index: 1;
+    text-align: center; /* Sentrerer teksten i label */
 }
 
-/* Pilen som peker nedover når lukket */
+/* Oppretter pilikon som roterer når åpnet */
 .collapsible label::after {
-    content: "";
+    content: "+";
     position: absolute;
-    right: 15px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
+    font-size: 18px;
     transition: transform 0.3s ease;
 }
 
-/* Rotasjon av pil når åpen */
+/* Roterer pil når åpnet */
 .collapsible input:checked + label::after {
-    transform: rotate(90deg);
+    content: "-";
 }
 
-.collapsible-text {
+/* Styling for kollapsbart innhold */
+.collapsible-content {
     max-height: 0;
     overflow: hidden;
     border-radius: 4px;
     line-height: 1.4;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    position: relative;
-    top: -100%;
-    opacity: 0.5;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    padding: 0 15px;
+    opacity: 0;
     transition: all 0.3s ease;
 }
 
-/* Når checkbox er sjekket, vis teksten */
-.collapsible input:checked ~ .collapsible-text {
-    max-height: 300px; /* juster høyde etter behov */
+/* Åpner innholdet når checkbox er sjekket */
+.collapsible input:checked ~ .collapsible-content {
+    max-height: 400px; 
     padding: 15px;
-    background: #fff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
-    top: 0;
 }
 
 
@@ -346,8 +345,6 @@ nav ul li a:hover::after {
     align-items: center; 
     margin: 0 auto;
     overflow: hidden; 
-    
-
 }
 
 .content{
@@ -355,26 +352,21 @@ nav ul li a:hover::after {
     max-width: 500px;
     box-sizing: border-box;
     margin-top: 0px;
-
 }
 
 .main-heading {
     color: black;
     margin-bottom: 8px;
     font-size: 1.5em;
-
 }
 
 .subtitle {
-
     font-size: 1em;
     color: black;
     margin-bottom: 15px;
-
 }
 
 .contact-button {
-
     display: inline-block;
     padding: 7px 16px;
     font-size: 0.9em;
@@ -388,10 +380,8 @@ nav ul li a:hover::after {
 }
 
 .contact-button:hover {
-
     background-color: #f5bf42;
     color:#800020;
-
 }
 
 .content img{
@@ -402,7 +392,6 @@ nav ul li a:hover::after {
 
 .content h3{
     font-size: 1.0em;
-
 }
 
 .content ul{
@@ -419,8 +408,6 @@ nav ul li a:hover::after {
 
 
 /*STYLE FOR FOOTER*/
-
-
 #footer{
     background-color: rgb(128, 0, 0);
     padding: 20px;
@@ -441,8 +428,6 @@ nav ul li a:hover::after {
 .footerContact, .footerSocial, .footerExternal{
     flex: 1;
 }
-
-
 
 .footerContact{
     text-align: left;
@@ -501,8 +486,6 @@ nav ul li a:hover::after {
 
 .fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
     margin-right: 5px;
-
-    
 }
 
 

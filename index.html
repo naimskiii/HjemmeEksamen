@@ -50,9 +50,9 @@
         <p class="subtext"> Bachelor's Degree </p>
      </section>
 
-     <!-- Section for the studyinformation-->
+     <!-- Section for the studyinformation, structured with grid layout-->
     <section class="studyInformation">
-
+        <!--Seven article elements for each point in the study description -->
         <article class="info-item study-location">
             <h2> Studyplace</h2>
             <p> Pilstredet in Oslo</p>
@@ -91,17 +91,17 @@
 
 
 
-<!-- Collapsible elements for the OPPTKASKRAV GREIENE-->
-<h2> Gain insight about the study itself ...</h2>
-
+<!--Section with collapsible information points -->
 <!-- SOURCE: https://www.youtube.com/watch?v=RvpYnUZRquw&ab_channel=EnhanceCoding-->
-<section class="info-collapsible">
+
+<h2> Gain insight about the study itself ...</h2>
+<section class="collapsible-section">
 
     <!-- First collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-1">
-        <label for="collapsible-head-1"> Admission requirements and points</label>
-        <figcaption class="collapsible-text"> 
+        <input type="checkbox" id="collapsible-1">
+        <label for="collapsible-1"> Admission requirements and points</label>
+        <figcaption class="collapsible-content"> 
             To apply for this program you must have <br><br>
             <ul>
                 <li>
@@ -123,9 +123,9 @@
 
     <!-- Second collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-2">
-        <label for="collapsible-head-2">How to apply</label>
-        <figcaption class="collapsible-text"> 
+        <input type="checkbox" id="collapsible-2">
+        <label for="collapsible-2">How to apply</label>
+        <figcaption class="collapsible-content"> 
            You apply to Samordna admission with study code 215 503.
            <ul>
             <li>15. April: ordinary application deadline</li>
@@ -133,37 +133,46 @@
            </ul>
            <br>
            <a href="https://www.oslomet.no/studie
-           You apply to Samordna admission with study code 215 503.r/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å søke på bachelor</a>
+           You apply to Samordna admission with study code 215 503.r/soknad-og-opptak/opptak-til-bachelor-aarsstudier">More about applying for a bachelor's degree</a>
         </figcaption>
     </figure>
 
     <!-- Third collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-3">
-        <label for="collapsible-head-3">What do you learn?</label>
-        <figcaption class="collapsible-text">
+        <input type="checkbox" id="collapsible-3">
+        <label for="collapsible-3">What do you learn?</label>
+        <figcaption class="collapsible-content">
             Bachelor in mathematical modeling and data science connects mathematics, computer science, physics and statistics.  <br> <br>
             You gain insight into mathematical models that are used in practical problem solving, for example in medicinal chemistry, biological processes and various social systems. <br> <br>
             In the first year of study, you have subjects in, among other things, mathematics, programming, physics and chemistry to gain a common understanding of the subject matter. <br><br>
             In the last semester, you write a bachelor's thesis closely related to issues in working life. <br><br>
-            In the first year, you choose which of these specializations you want to take. <br>
+            In the first year, you choose which of these specializations you want to take. <br><br>
+            <ul>
+                <li>Statistical and data-driven methods</li>
+                <li>Scientific calculations</li>
+                <li>Mathematics and physics</li>
+            </ul>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/HØST">
+                See the program schedule at student.oslomet.no</a>
         </figcaption>
     </figure>
 
     <!-- Fourth collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-4">
-        <label for="collapsible-head-4">The structure of the study</label>
-        <figcaption class="collapsible-text">
-            Bruke table? eller section og divs?
+        <input type="checkbox" id="collapsible-4">
+        <label for="collapsible-4">The structure of the study</label>
+        <figcaption class="collapsible-content">
+            The course over several semesters can be found under: Content and structure <br>
+            <a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/HØST">
+                See the program schedule at student.oslomet.no</a>
         </figcaption>
     </figure>
 
     <!-- Fifth collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-5">
-        <label for="collapsible-head-5">How does the teaching take place? </label>
-        <figcaption class="collapsible-text">
+        <input type="checkbox" id="collapsible-5">
+        <label for="collapsible-5">How does the teaching take place? </label>
+        <figcaption class="collapsible-content">
             The teaching is a combination of <br> <br>
             <ul>
                 <li>Projectwork</li>
@@ -172,7 +181,7 @@
                 <li>Guidance</li>
                 <li>Discussions and reflections</li>
                 <li>Lectures</li>
-                <li>Self stud</li>
+                <li>Self studys</li>
                 <li>Groupwork</li>
                 <li>Bachelor's thesis relevant to working life</li>
             </ul> <br>
@@ -182,9 +191,9 @@
 
     <!-- Sixth collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-6">
-        <label for="collapsible-head-6">What does it cost?</label>
-        <figcaption class="collapsible-text">
+        <input type="checkbox" id="collapsible-6">
+        <label for="collapsible-6">What does it cost?</label>
+        <figcaption class="collapsible-content">
             <a href="https://student.oslomet.no/semesteravgift"> You pay a semester fee each semester (student.oslomet.no).</a>
             <br> <br>
             <a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">
@@ -197,9 +206,9 @@
 
     <!-- Seventh collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-7">
-        <label for="collapsible-head-7">What can you work as?</label>
-        <figcaption class="collapsible-text">
+        <input type="checkbox" id="collapsible-7">
+        <label for="collapsible-7">What can you work as?</label>
+        <figcaption class="collapsible-content">
             With this study, you get IT skills that are in demand in working life, especially if you choose the specializations scientific calculations or statistical and data-driven methods. <br><br>
             The specialization in mathematics and physics is aimed more at further studies, but here, too, you get skills that are in demand in working life after your bachelor's degree. <br> <br>
             Mathematical modeling and data science are becoming increasingly important as a basis, for example in calculations related to climate, insurance and finance, and data-driven methods for value creation. <br><br>
@@ -210,20 +219,20 @@
 
     <!-- Eight collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-8">
-        <label for="collapsible-head-8">Study abroad</label>
-        <figcaption class="collapsible-text">
-            You can go study abroad in the fifth semester.
+        <input type="checkbox" id="collapsible-8">
+        <label for="collapsible-8">Study abroad</label>
+        <figcaption class="collapsible-content">
+            You can go to study abroad in the fifth semester.
         </figcaption>
     </figure>
 
     <!-- Nineth collapsible-->
     <figure class="collapsible">
-        <input type="checkbox" id="collapsible-head-9">
-        <label for="collapsible-head-9">Further study opportunities at OsloMet</label>
-        <figcaption class="collapsible-text">
-            <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi"> Du kan ta masterprogram i Anvendt data- og informasjonsteknologi (ACIT) </a>
-           
+        <input type="checkbox" id="collapsible-9">
+        <label for="collapsible-9">Further study opportunities at OsloMet</label>
+        <figcaption class="collapsible-content">
+            <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+                You can take a master's program in Applied Computer and Information Technology (ACIT)</a>
         </figcaption>
     </figure>
 
@@ -252,7 +261,7 @@
         <h2 class="main-heading">
             Questions about the education?</h2>
 
-        <h3>Take contact with a proffesional manager</h3>
+        <h3>Take contact with a proffesional manager</h3> <br>
         <img src="https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944" alt="">
         <h3>Kristoffer Herland Hellton</h3>
         <p>førsteamunensis</p>
@@ -260,7 +269,6 @@
             <li>+47 672 37 240</li>
             <li>kristioffer.hellton@oslomet.no</li>
         </ul>
-<br>
 <br>
 
         <h3 class="subtitle">Talk to a student for personalized guidance</h3>
