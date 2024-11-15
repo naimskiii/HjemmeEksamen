@@ -550,7 +550,7 @@ background-color: rgb(128, 0, 0);
 .github-site body {
 
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #8fe0d2;
     color: #333;
     font-family: 'Courier New', Courier, monospace;
 
@@ -566,10 +566,10 @@ background-color: rgb(128, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.github-site .mainnr2 {
+.github-site .main-box {
 
     margin: 25px auto;
-    background-color: #ffffff;
+    background-color: #ad4e79;
     box-shadow: 0 5px 15px rgba(127, 14, 14, 0.1);
     padding: 25px;
     border-radius: 8px;
@@ -640,7 +640,7 @@ background-color: rgb(128, 0, 0);
 .github-site h2 {
     padding-bottom: 10px;
     font-size: 1.8rem;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #bf2dcc;
     color: #0057a3;
     margin: 25px 0 15px;
     
