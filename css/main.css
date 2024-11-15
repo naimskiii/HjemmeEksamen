@@ -29,7 +29,6 @@
 
 
 
-
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -116,7 +115,6 @@ nav ul li a:hover::after {
 
 /* END - Navigation bar */
 
-
 /* Background Main OsloMet Img */
 .backgroung_OsloMet {
     position: relative;
@@ -135,7 +133,6 @@ nav ul li a:hover::after {
     transform: translate(-50%, -50%);   
     z-index: -1;                      
 }
-
 
 
 /* Styles for class index - title, h1 and the subtext */
@@ -220,7 +217,6 @@ nav ul li a:hover::after {
     color: #333333;
 }
 
-
 /*!------ Dette er for index siden  Collapsible for studie Opptak informasjon-----*/
 .info-collapsible {
     display: grid;
@@ -296,7 +292,6 @@ nav ul li a:hover::after {
 }
 
 
-
 /*BUTTON- ANDRE UTDANNINGER*/
 .buttons {
     display: flex;
@@ -324,7 +319,6 @@ nav ul li a:hover::after {
     background-color: #FFB81C; /* Hover-effekt bakgrunnsfarge */
     color: black; /* Hover-effekt tekstfarge */
 }
-
 
 
 
@@ -417,9 +411,7 @@ nav ul li a:hover::after {
 }
 
 
-
 /*STYLE FOR FOOTER*/
-
 
 #footer{
     background-color: rgb(128, 0, 0);
@@ -441,7 +433,6 @@ nav ul li a:hover::after {
 .footerContact, .footerSocial, .footerExternal{
     flex: 1;
 }
-
 
 
 .footerContact{
@@ -507,7 +498,6 @@ nav ul li a:hover::after {
 
 
 
-
 /*!--------dette er github*/
 .main-body {
     background-color: #ffffff; /* Gul bakgrunn for hele siden */
@@ -515,7 +505,6 @@ nav ul li a:hover::after {
     border: 100px solid #e6b800;
     background-color: white;
     border: 5px solid #800020;         /*Ytre ramme for hele grid*/
-
 
     font-family: 'Times New Roman', Times, serif;
     padding-top: 100px; 
@@ -574,7 +563,6 @@ nav ul li a:hover::after {
     border-left-style: double;
 }
 
-
 .github_2 img,.github_3 img,.github_4 img,.github_{
     text-align: center;
 
@@ -585,7 +573,6 @@ nav ul li a:hover::after {
     display: block;
     color:#555;
 }
-
 
 <!----viser underskriften ved å gjøre det
 .github_3 ,.github_4,.github_5 , h2 {
@@ -613,9 +600,7 @@ nav ul li a:hover::after {
 
 
 
-
 /* activity page*/
-
 
 /* Main container for basketball page */
 .wrapper-page {
@@ -641,7 +626,6 @@ nav ul li a:hover::after {
     
 }
 
-
 .wrapper-page .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -662,7 +646,6 @@ nav ul li a:hover::after {
 
 
 
-
 /* Navigation links */
 .wrapper-page nav ul {
     list-style: none;
@@ -678,7 +661,6 @@ nav ul li a:hover::after {
     font-family: monospace;
     
 }
-
 
 .wrapper-page .nav ul li a:hover {
     color: #ffffff;
@@ -728,7 +710,6 @@ nav ul li a:hover::after {
 
     font-size: 20px;
 }
-
 
 /* Content Section */
 .content {
@@ -827,5 +808,3 @@ nav ul li a:hover::after {
   .wrapper-page .legal-info ul li a:hover {
     color: #ff9800;
   }
-  
->>>>>>> b538d5f1403d373a1fee3b42255f3a3be249747e
