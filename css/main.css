@@ -336,7 +336,25 @@ nav ul li a:hover::after {
     color: black; /* Hover-effekt tekstfarge */
 }
 
+/*styling of the table*/
 
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+}
+
+table th,td{
+    border: 1px solid;
+    text-align: left;
+    padding : 5px;
+}
+
+th{
+background-color: rgb(128, 0, 0);
+}
 
 
 
@@ -362,9 +380,10 @@ nav ul li a:hover::after {
 }
 /*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 
-.advisory-section:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
+
+.advisory-section:hover{
+    transform: scale(1.0);
+    box-shadow: 0 2px 15px #FFB81C;
 }
 
 .content{
