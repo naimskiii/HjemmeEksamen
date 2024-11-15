@@ -522,50 +522,58 @@ nav ul li a:hover::after {
     line-height: 1.5;
     font-size: 12px;
 }
+/---!dette endre skriftstørrelsen på avsnittebe>
 
-.main-headingheader {
-    position: fixed;
-    background: rgb(128, 0, 0); /* Mørk - Rød bakgrunn */
-    width: 100%;
-    height: 100px;
-    top: 0;
-    display: flex;
-    align-items: center;    /* Vertical centering of logo and navigation */
-    padding: 10px;
-    z-index: 5;
-    justify-self: unset;
-}
-
-.mainbox{
-    width: 80%;
+.github p, section {  
+    font: weight 900px;;
+    color: #333;
     max-width: 12000;
-    text-align: center;
-    justify-self:center;
+    font-size: large;
+
 }
 
-article{
+.github p, article{
     padding: 20px;
     overflow: hidden;
+    font-size: 400%;
 }
-.ingress{
-    font-weight: 700;
+.github p ingress{
+    font: weight 900px;;
     color: #333;
     width: 90%;
     max-width: 12000;
     text-align: center
 }
 
-section{
-    margin: 2rem;
+<!---denne gjør at teksten går i midten>
+.github p {
+    font-size: 300%;
+    
+    
+}
+<!---denne også gjør at teksten går i midten og gjorde at teksten ble større>
+
+.github p, section{
+    margin: 6rem;
+    font-size: 300%;
+
 }
 
 .github_1 img{
-    max-width: 300px;
+    width: 500px;
     height: auto;
     margin-top: 30;
-    display: block;
     margin:0px auto;
+    align-items: center;
+    display: flex;
+
 }
+
+.left-image {
+    position: absolute;
+    border-left-style: double;
+}
+
 
 .github_2 img,.github_3 img,.github_4 img,.github_{
     text-align: center;
@@ -578,24 +586,22 @@ section{
     color:#555;
 }
 
-.github h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 450;
-    font-size: 3.5rem;
-}
 
-
-.github h2 {
-    font-size: 1.9rem;
-    color: #2232;
+<!----viser underskriften ved å gjøre det
+.github_3 ,.github_4,.github_5 , h2 {
+    font-size: 2rem;
+    color:black;
     margin-bottom: 15px;
     display: block;
+    width: max(600px);
+    
+
  }
 .github p, .list li {
     font-size: 1.9rem;
     color: #333;
 }
-.github .list {
+.github p .list {
     width: max(600px);
     margin: 1em;
     padding: 1em;
@@ -729,4 +735,97 @@ section{
     padding: 100px 20px;
     max-width: 1200px;
     margin: 0 auto;
+<<<<<<< HEAD
 }
+=======
+}
+
+.wrapper-page .site-footer {
+    
+    background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
+    color: #fc9004;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ .wrapper-page .footer-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-page .footer-links section {
+    margin: 0 10px;
+  }
+  
+  .wrapper-page .footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-page .footer-links ul {
+    list-style: none;
+  }
+  
+  .wrapper-page .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  
+  .wrapper-page .footer-links ul li a {
+    color: #131313;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .wrapper-page .footer-links ul li a:hover {
+    color: #ff9800; /* Accent color */
+  }
+  
+  /* Social Media Icons */
+  .wrapper-page .social-media {
+    margin: 20px 0;
+  }
+  
+ .wrapper-page .social-icon {
+    color: #ff9a16;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .wrapper-page .social-icon:hover {
+    color: #ff9800;
+  }
+  
+  /* Legal Information */
+  .wrapper-page .legal-info {
+    font-size: 14px;
+    color: #292727;
+  }
+  
+  .wrapper-page .legal-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .wrapper-page .legal-info ul li {
+    margin: 0 15px;
+  }
+  
+  .wrapper-page .legal-info ul li a {
+    color: #605c5c;
+    text-decoration: none;
+  }
+  
+  .wrapper-page .legal-info ul li a:hover {
+    color: #ff9800;
+  }
+  
+>>>>>>> b538d5f1403d373a1fee3b42255f3a3be249747e
