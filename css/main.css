@@ -512,7 +512,7 @@ background-color: rgb(128, 0, 0);
     font-size: medium;
     margin: 0 10px;
 }
-/* source: https://russmaxdesign.github.io/aria-label-popover/*/
+ /*source: https://russmaxdesign.github.io/aria-label-popover/*/
 .footerSocial a:hover::after {
     content: attr(aria-label); 
     position: absolute;
@@ -533,6 +533,8 @@ background-color: rgb(128, 0, 0);
 .fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
     margin-right: 5px;
 }
+
+
 
 
 
