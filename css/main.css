@@ -233,7 +233,7 @@ nav ul li a:hover::after {
 .collapsible-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 20px;
     padding-top: 50px;
     justify-items: center;
     font-size: 1.2em;
@@ -338,8 +338,6 @@ table{
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
-    
-    
 }
 
 table th,td{
@@ -351,9 +349,6 @@ table th,td{
 th{
 background-color: rgb(128, 0, 0);
 }
-
-
-
 
 .advisory-section:hover{
     transform: scale(1.0);
