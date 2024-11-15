@@ -686,7 +686,7 @@ background-color: rgb(128, 0, 0);
     color: white;   
     z-index: 1000;
     padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(245, 247, 247, 0.3);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
     
 }
 
@@ -704,9 +704,23 @@ background-color: rgb(128, 0, 0);
     width: 100px; /* Adjust size as needed */
     
 
-    position: fixed; margin: -0,10px -0,5px 1px -0,5px; left: 0; display:inline;
+    position: fixed; margin: -2,5px -1,5px 1px -0,5px; left: 0; display:inline;
+
+   
 }
    
+ .wrapper-page .logo3 {
+  
+ font-size: 45px;
+ font-weight: bold;
+ color: #f86300;
+ text-decoration:linear-gradient;
+ font-family: fantasy;
+ position:relative
+
+ 
+}
+
 
 /* main */
 
@@ -966,3 +980,6 @@ wrapper-page .activity-page section {
   .wrapper-page .legal-info ul li a:hover {
     color: #ff9800;
   }
+
+
+  
