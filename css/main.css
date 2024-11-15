@@ -522,7 +522,7 @@ background-color: rgb(128, 0, 0);
 
 
 /*!--------dette er github*/
-.main-body {
+.github p body {
     background-color: #ffffff; /* Gul bakgrunn for hele siden */
     padding: 10px; /* Litt plass rundt hele siden */
     border: 100px solid #e6b800;
@@ -581,10 +581,7 @@ background-color: rgb(128, 0, 0);
 
 }
 
-.left-image {
-    position: absolute;
-    border-left-style: double;
-}
+
 
 .github_2 img,.github_3 img,.github_4 img,.github_{
     text-align: center;
