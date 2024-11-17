@@ -631,6 +631,7 @@ background-color: rgb(128, 0, 0);
 }
 
 
+
 /* activity page*/
 
 /* Main container for basketball page */
@@ -692,25 +693,32 @@ background-color: rgb(128, 0, 0);
 .Basketball-site nav ul {
     float: flex;
     margin: 0;
+    gap: 15px;
     padding: 0;
     list-style: none;
   
 }
 
-.Basketball-site nav {
-display: flex;
-margin-left: auto;
-align-items: center;
+ .Basketball-site nav {
+ display: flex;
+ margin-left: auto;
+ align-items: center;
 
 }
 
 
 .Basketball-site nav ul a {
-    color: rgb(254, 254, 254);
+    color: rgb(255, 255, 255);
+    border: 3px;
     text-decoration: none;
-    font-size: 20px;
-    font-family:"Alumni Sans Collegiate One";
-    transition: color 0.3s ease;
+    font-size: 13px;
+    color: white;
+    text-shadow: 2px 2px 4px #f67b16;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    font-family:fantasy;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -722,6 +730,7 @@ align-items: center;
 
 .Basketball-site nav ul a:hover {
     color: #ffffff;
+    background-color: #e65c00;
 }
 
 /* image-basketball Section */
@@ -790,7 +799,7 @@ align-items: center;
     background-color: #ff3300;
 }
 
-/* Activity Page Styles */
+/* Activity Page Styles - main */
 .Basketball-site .activity-page {
     padding: 40px 20px;
     max-width: 1200px;
@@ -812,7 +821,7 @@ align-items: center;
 }
 
 .Basketball-site .activity-page h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ff8800;
     margin-bottom: 15px;
     text-align: center;
@@ -839,11 +848,14 @@ align-items: center;
     text-decoration: underline;
 }
 
+
+
+
 /* Image Gallery */
 .Basketball-site .image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
     margin: 20px 0;
 }
 
@@ -881,7 +893,9 @@ align-items: center;
 
 .Basketball-site .footer-links section h3 {
     font-size: 18px;
+    color: #333333;
     margin-bottom: 10px;
+    
 }
 
 .Basketball-site .footer-links ul {
@@ -941,13 +955,14 @@ align-items: center;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .Basketball-site .activity-page {
         padding: 10px;
+        width: 60px;
     }
 
     .Basketball-site .image-basketball h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .Basketball-site .image-basketball p {
