@@ -402,94 +402,117 @@ background-color: rgb(128, 0, 0);
 /* Contact us */
 
 .advisory-section {
-    padding: 5px;
-    background-color: white;
     border: 3px solid #FFB81C;
-    border-radius: 8px;
-    box-shadow: 0 4px #FFB81C;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    max-height: 450px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center; 
-    margin: 0 auto;
+    margin: 30px auto;
+    padding: 20px;
     position: relative;
-    top:-60px;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.advisory-section:hover{
-    transform: scale(1.0);
-    box-shadow: 0 2px 15px #FFB81C;
-}
-/*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 
 .advisory-section:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 184, 28, 0.5);
 }
 
-.content{
-    padding: 10px;
-    max-width: 500px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    position: relative;
-    top:-60px;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
+
 
 .main-heading {
-    color: black;
-    margin-bottom: 8px;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
 }
+
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+
+.contact-details img {
+    width: 150px; 
+    height: 180px; 
+    border-radius: 12px; 
+    border: 2px solid #FFB81C;
+    object-fit: cover; 
+}
+
+
+.contact-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+}
+
+
+.contact-details h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+
+
+.contact-details ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1em;
+    color: #555555;
+}
+
+.contact-details ul li {
+    margin-bottom: 5px;
+}
+
 
 .subtitle {
-    font-size: 1em;
-    color: black;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #555555;
+    margin: 20px 0;
 }
 
+/*source: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover*/
 .contact-button {
     display: inline-block;
-    padding: 7px 16px;
-    font-size: 0.9em;
-    color: white;
-    background-color: darkred;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #800020;
     text-decoration: none;
-    border-radius: 4px;
-    transition: 0.5s ease;
-    margin-bottom: 9px;
-    text-align: center; 
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 .contact-button:hover {
     background-color: #f5bf42;
-    color:#800020;
+    color: #800020;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
-.content img{
-    max-width: 90px;
-    max-height: 120px;
-    margin-bottom: 15px;
-}
-
-.content h3{
-    font-size: 1.0em;
-}
-
-.content ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: 0.9em;
-}
-
-.content ul li{
-    margin-bottom: 5px;
-}
-
 
 
 
