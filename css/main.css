@@ -583,6 +583,13 @@ background-color: rgb(128, 0, 0);
     padding: 0 20px; 
     border: none;
 }
+.github-site {
+    width: 80%; /* Reduserer hele sidens bredde */
+    margin: 0 auto; /* Sentrerer innholdet */
+    box-sizing: border-box;
+    padding: 20px; /* Legger til litt luft rundt innholdet */
+    color: yellow;
+}
 
 .github-site h1 {
     text-align: center;
@@ -613,7 +620,16 @@ background-color: rgb(128, 0, 0);
     text-align: center;
     font-size: 2rem; 
 }
-
+.github-site p, 
+.github-site .list li, 
+.github-site .text-beside-image {
+    max-width: 90%; /* Tekstbredden matcher bildebredde */
+    margin: 1em auto; /* Sentrer teksten */
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #333;
+    text-align: center;
+}
 .github-site .section {
     padding: 40px;
     margin: 2rem 0;
@@ -637,10 +653,11 @@ background-color: rgb(128, 0, 0);
 }
 
 .github-site .text-beside-image {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
-    color: #555;
+    color: #130e0e;
     margin-top: 5px;
+     font-weight: bold;
 }
 
 .github-site h2 {
@@ -662,7 +679,7 @@ background-color: rgb(128, 0, 0);
 }
 
 .github-site .list {
-    width: 40%;
+    width: 60%;
     margin: 2em auto;
     padding: 20px;
     background-color:white
