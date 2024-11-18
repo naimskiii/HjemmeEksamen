@@ -235,6 +235,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding-top: 50px;
+    margin: 0 20px;
     justify-items: center;
     font-size: 1.2em;
 }
@@ -379,7 +380,7 @@ background-color: rgb(128, 0, 0);
     right: -100%;   /*Tesksten kommer fra høyre side*/
     position: absolute;
     background: #1f3d4738;
-    backdrop-filter: blur(5px);     /*Funker ikke ?*/
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -415,10 +416,14 @@ background-color: rgb(128, 0, 0);
     cursor: pointer;
     width: 160px;
 }
+.studenthistorier-btn a {
+    color: white; 
+    text-decoration: none; 
+}
 
-
-
-
+.studenthistorier-btn a:hover {
+    text-decoration: underline;
+}
 
 
 
