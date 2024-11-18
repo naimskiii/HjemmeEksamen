@@ -235,6 +235,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding-top: 50px;
+    margin: 0 20px;
     justify-items: center;
     font-size: 1.2em;
 }
@@ -353,8 +354,9 @@ background-color: rgb(128, 0, 0);
 
 /*!------ Dette er for index siden (Studenthistorier) -----*/
 .studenthistorier {
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
+    margin: 60px 20px 300px 300px;     /*Justerer hvor den skal ligge på nettsiden*/
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -362,6 +364,7 @@ background-color: rgb(128, 0, 0);
     align-items: center;
     border: 8px solid #ffe5b4;
     position: relative;
+    text-align: center;
 }
 
 .card-img {
@@ -374,27 +377,53 @@ background-color: rgb(128, 0, 0);
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;   /*Tesksten kommer fra høyre side*/
+    right: -100%;   /*Tesksten kommer fra høyre side*/
     position: absolute;
     background: #1f3d4738;
-    backdrop-filter: blur(5px);     /*Funker ikke ?*/
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.studenthistorier:hover .studenthistorier-text {
+    right: 0;
 }
 
 .studenthistorier-title {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
 }
 .studenthistorier-info {
     font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
 }
-/*IKKE FRDY*/
+.studenthistorier-btn {
+    color: white;
+    background: #800020;
+    padding: 10px 20px;
+    margin: 0 275px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 160px;
+}
+.studenthistorier-btn a {
+    color: white; 
+    text-decoration: none; 
+}
 
-
-
-
+.studenthistorier-btn a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -665,9 +694,17 @@ background-color: rgb(128, 0, 0);
     font-size: 3rem; 
     border-bottom: 3px solid #bf2dcc;
     color: #0057a3;
-    margin: 20px 0;
+    margin: 10 px 0;
     text-align: center;
+    margin: 0px auto;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Større skygge */
+    padding: 15x;
+    border-radius: 30px;
+    max-width: 1000px; /* Økt maksimal bredde for at teksten ikke skal bli for smal */
+    overflow: hidden;
 }
+
 
 .github-site p, .github-site .list li {
     font-size: 2rem; 
@@ -819,14 +856,16 @@ background-color: rgb(128, 0, 0);
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: 0;
-}
+} b 
 
 
 /* google fonts */
  .google-fonts {
-    font-family: "Permanent Marker", cursive;
+
+    font-family: "Permanent Marker",cursive;
     font-weight: 500px;
     font-style: normal;
+
   }
   
 
