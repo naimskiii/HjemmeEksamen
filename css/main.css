@@ -223,6 +223,11 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 150px;
 }
+.header-location h2:hover {
+    text-decoration: underline;
+    
+}
+
 .header-location p {
     font-size: 1.3em;
     text-align: center;
@@ -424,7 +429,6 @@ background-color: rgb(128, 0, 0);
 .studenthistorier-btn a:hover {
     text-decoration: underline;
 }
-
 
 
 
