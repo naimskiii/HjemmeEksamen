@@ -832,7 +832,12 @@ background-color: rgb(128, 0, 0);
 
 /* google fonts */
  .google-fonts {
+<<<<<<< HEAD
     font-family: "Permanent Marker", cursive;
+=======
+
+    font-family:"Permanent Marker", cursive;
+>>>>>>> 99f2d327d7fc4b71e2fbd642686334f3861e599f
     font-weight: 500px;
     font-style: normal;
   }
