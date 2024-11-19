@@ -131,16 +131,17 @@ nav ul li a:hover::after {
 
 }
 .index-title h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
     text-align: center;
     margin-top: 150px;
 }
 
 .index-title .subtext {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin-top: 20px;
+    text-decoration: underline #FFC137;
 }
 
 /* Grid - layout for studyinformation */
