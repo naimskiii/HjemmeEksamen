@@ -1,15 +1,13 @@
 /* header styles for larger screens */
-
 @media (min-width: 701px) {
     .header {
         display: flex;
         flex-direction: row;
         list-style-type: none;
     }
-    
 }
 
-    /* header styles for smaller screens */
+/* header styles for smaller screens */
 @media (max-width: 700px) {
     .header {
         list-style-type: none;
@@ -22,7 +20,6 @@
         max-height: 0; /* Hidden by default */
         transition: max-height 0.3s ease; /* Smooth slide down transition */
     }
-    
 }
 
 
@@ -38,12 +35,6 @@ body {
     line-height: 1.5;
     font-size: 12px;
 }
-/*main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}*/
 
 /* Styles all elements across all pages */
 * {
@@ -223,6 +214,11 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 150px;
 }
+.header-location h2:hover {
+    text-decoration: underline;
+    
+}
+
 .header-location p {
     font-size: 1.3em;
     text-align: center;
@@ -235,6 +231,8 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     justify-items: center;
     font-size: 1.2em;
 }
@@ -336,16 +334,12 @@ table{
     border-collapse: collapse;
     width: 100%;
     margin-top: 10px;
-    
-    
 }
-
 table th,td{
     border: 1px solid;
     text-align: left;
     padding : 5px;
 }
-
 th{
 background-color: rgb(128, 0, 0);
 }
@@ -353,8 +347,9 @@ background-color: rgb(128, 0, 0);
 
 /*!------ Dette er for index siden (Studenthistorier) -----*/
 .studenthistorier {
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
+    margin: 60px 20px 300px 300px;     /*Justerer hvor den skal ligge på nettsiden*/
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -362,6 +357,7 @@ background-color: rgb(128, 0, 0);
     align-items: center;
     border: 8px solid #ffe5b4;
     position: relative;
+    text-align: center;
 }
 
 .card-img {
@@ -374,122 +370,168 @@ background-color: rgb(128, 0, 0);
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;   /*Tesksten kommer fra høyre side*/
+    right: -100%;   /*Tesksten kommer fra høyre side*/
     position: absolute;
     background: #1f3d4738;
-    backdrop-filter: blur(5px);     /*Funker ikke ?*/
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
 }
-
+.studenthistorier:hover .studenthistorier-text {
+    right: 0;
+}
 .studenthistorier-title {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
 }
 .studenthistorier-info {
     font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
 }
-/*IKKE FRDY*/
-
-
-
-
-
+.studenthistorier-btn {
+    color: white;
+    background: #800020;
+    padding: 10px 20px;
+    margin: 0 275px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 160px;
+}
+.studenthistorier-btn a {
+    color: white; 
+    text-decoration: none; 
+}
+.studenthistorier-btn a:hover {
+    text-decoration: underline;
+}
 
 
 
 /* Contact us */
 
 .advisory-section {
-    padding: 5px;
-    background-color: white;
     border: 3px solid #FFB81C;
-    border-radius: 8px;
-    box-shadow: 0 4px #FFB81C;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    max-height: 450px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center; 
-    margin: 0 auto;
+    margin: 30px auto;
+    padding: 20px;
     position: relative;
-    top:-60px;
-    overflow: hidden; 
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.advisory-section:hover{
-    transform: scale(1.0);
-    box-shadow: 0 2px 15px #FFB81C;
-}
-/*source:https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 
 .advisory-section:hover {
-    transform: scale(1.02); 
-    box-shadow: 0 6px 20px rgba(255, 184, 28, 0.6); 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 184, 28, 0.5);
 }
 
-.content{
-    padding: 10px;
-    max-width: 500px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    position: relative;
-    top:-60px;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
+
 
 .main-heading {
-    color: black;
-    margin-bottom: 8px;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
 }
+
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+
+.contact-details img {
+    width: 150px; 
+    height: 180px; 
+    border-radius: 12px; 
+    border: 2px solid #FFB81C;
+    object-fit: cover; 
+}
+
+
+.contact-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+}
+
+
+.contact-details h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
+
+
+
+.contact-details ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1em;
+    color: #555555;
+}
+
+.contact-details ul li {
+    margin-bottom: 5px;
+}
+
 
 .subtitle {
-    font-size: 1em;
-    color: black;
-    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #555555;
+    margin: 20px 0;
 }
 
+/*source: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover*/
 .contact-button {
     display: inline-block;
-    padding: 7px 16px;
-    font-size: 0.9em;
-    color: white;
-    background-color: darkred;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #800020;
     text-decoration: none;
-    border-radius: 4px;
-    transition: 0.5s ease;
-    margin-bottom: 9px;
-    text-align: center; 
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 .contact-button:hover {
     background-color: #f5bf42;
-    color:#800020;
+    color: #800020;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
-.content img{
-    max-width: 90px;
-    max-height: 120px;
-    margin-bottom: 15px;
-}
-
-.content h3{
-    font-size: 1.0em;
-}
-
-.content ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: 0.9em;
-}
-
-.content ul li{
-    margin-bottom: 5px;
-}
-
 
 
 
@@ -514,37 +556,29 @@ background-color: rgb(128, 0, 0);
 .footerContact, .footerSocial, .footerExternal{
     flex: 1;
 }
-
 .footerContact{
     text-align: left;
 }
-
 .footerSocial{
     text-align: right;
 }
-
 .footerExternal{
     text-align: center;
-
 }
 .footerContact h3, .footerExternal h3, .footerSocial h3 {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: large;
-    
 }
-
 .footerContact ul, .footerExternal ul{
     list-style-type:none;
     padding:0;
     margin: 0;
     font-size: 0.9rem;
 }
-
 .footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
     text-decoration: underline;
 }
-
 .footerSocial a, .footerContact a, .footerExternal a{
     position: relative;
     color:white;
@@ -575,6 +609,8 @@ background-color: rgb(128, 0, 0);
 
     
 }
+
+/*!------ Dette er for GitHub siden -----*/
 .github-site * {
     margin: 0 ;
     line-height: 1.5;
@@ -648,22 +684,21 @@ background-color: rgb(128, 0, 0);
  width: 25%;
  
 }
- 
 .github-site .github_1 img {
  
     display: flex;
     height: 50px;
     align-items: center;
     margin-right: 10px;
- 
- 
- 
 }
  
+<<<<<<< HEAD
  
  
 
 /* Alle andre bilder */
+=======
+>>>>>>> e160df94f00a35516a0431fc46df8a6f69176e29
 .github-site .github_2 img,
 .github-site .github_3 img,
 .github-site .github_4 img,
@@ -676,8 +711,7 @@ background-color: rgb(128, 0, 0);
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
- 
- 
+
 .github-site h2 {
     padding-bottom: 10px;
     font-size: 2rem;
@@ -711,23 +745,16 @@ background-color: rgb(128, 0, 0);
 
 }
 .github-site .section p {
-   
- 
-   
     font-style: italic;
     color: #555;
- 
- 
- 
 }
- 
+
 .github-site p, .github-site .list li {
     font-size: 1.1rem;
     line-height: 1.4;
     color: #333;
     margin: 1em 0;
     text-align: center;
-     
 }
  
 .github-site .list {
@@ -765,7 +792,7 @@ background-color: rgb(128, 0, 0);
 
 
 
-/* activity page*/
+/* /*!------ Dette er for Activity Page -----*/
 
 /* Main container for basketball page */
 .Basketball-site {
@@ -793,24 +820,17 @@ background-color: rgb(128, 0, 0);
 }
 
 /* Logo style*/
-
-
 .Basketball-site .logo img {
-    
     margin-right: 10px;
     width: 85px;
 }
 
-
 .Basketball-site .logo {
-
     align-items: center;
     display: flex;
-
 }
 
 .Basketball-site .logo3 {
-
     font-family: "Alumni Sans Collegiate One", serif;
     font-weight: 400;
     font-style: italic;
@@ -818,27 +838,20 @@ background-color: rgb(128, 0, 0);
     color: rgb(255, 115, 0);
 }
 
-
-
 /* Navigation style - menu */
-
-
 .Basketball-site nav ul {
     float: flex;
     margin: 0;
     gap: 15px;
     padding: 0;
     list-style: none;
-  
 }
 
- .Basketball-site nav {
+.Basketball-site nav {
  display: flex;
  margin-left: auto;
  align-items: center;
-
 }
-
 
 .Basketball-site nav ul a {
     color: rgb(255, 255, 255);
@@ -854,11 +867,8 @@ background-color: rgb(128, 0, 0);
     transition: background-color 0.3s ease;
 }
 
-
 .Basketball-site nav ul li {
-
    margin: 0 10px;
-
 }
 
 .Basketball-site nav ul a:hover {
@@ -875,8 +885,7 @@ background-color: rgb(128, 0, 0);
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;  
 }
 
 .Basketball-site .basket-image {
@@ -897,15 +906,12 @@ background-color: rgb(128, 0, 0);
     margin: 0;
 }
 
-
 /* google fonts */
  .google-fonts {
     font-family: "Permanent Marker", cursive;
     font-weight: 500px;
     font-style: normal;
-  }
-
-
+}
 
 .Basketball-site .image-basketball h1 {
     font-size: 5rem;
@@ -981,9 +987,6 @@ background-color: rgb(128, 0, 0);
     text-decoration: underline;
 }
 
-
-
-
 /* Image Gallery */
 .Basketball-site .image-gallery {
     display: grid;
@@ -1028,7 +1031,6 @@ background-color: rgb(128, 0, 0);
     font-size: 18px;
     color: #333333;
     margin-bottom: 10px;
-    
 }
 
 .Basketball-site .footer-links ul {
