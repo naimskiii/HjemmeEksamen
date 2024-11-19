@@ -943,6 +943,74 @@ background-color: rgb(128, 0, 0);
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    gap: 20px;
+    display: flex;
+
+}
+
+
+.activity-page main {
+
+ flex: 3;
+
+}
+
+/* box-1 styling*/
+.activity-page .box-1 {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  
+
+}
+
+.box-1 h4 {
+  
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color:#ff8000;
+
+}
+
+.box-1 ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.box-1 ul li {
+
+    margin-bottom: 10px;
+
+}
+
+.box-1 ul li a {
+
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3 ease;
+
+
+}
+ 
+.box-1 ul li a:hover {
+ 
+    color: #ff6600;
+
+}
+
+ .box-1 img {
+
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .Basketball-site .activity-page section {
@@ -1088,6 +1156,20 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .legal-info ul li a:hover {
     color: #ff9800;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
