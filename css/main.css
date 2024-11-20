@@ -1127,18 +1127,8 @@ background-color: rgb(128, 0, 0);
     
     padding: 40px; /* kan endres på senere, er bare et eksempel for nå*/
     margin-top: 40px;
-    margin: 40px 0;  /* Kan fjernes hvis man ønsker*/
+    margin: 40px 0;  /* Kan fjernes hvis man */
     color: rgb(8, 8, 8);
 
 }
-
-
- .accessibility-page .effect-intro::after{ /* ikke rør denne, må endre på den*/
-
-    display: table;
-    clear: both;
-    content: "";
-
-}
-
 
