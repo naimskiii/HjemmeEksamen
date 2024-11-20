@@ -131,7 +131,7 @@ nav ul li a:hover::after {
 
 }
 .index-title h1 {
-    font-size: 4em;
+    font-size: 3.2em;
     font-weight: bold;
     text-align: center;
     margin-top: 150px;
@@ -142,6 +142,10 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 20px;
     text-decoration: underline #FFC137;
+}
+.subtext a {
+    color: black;
+    font-weight: bold;
 }
 
 /* Grid - layout for studyinformation */
@@ -167,14 +171,14 @@ nav ul li a:hover::after {
 }
 
 .info-item h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 5px;
     color: black;
 }
 
 .info-item p {
-    font-size: 13px;
+    font-size: 15px;
     color: #333333;
     margin-top: 5px;
 }
@@ -215,11 +219,6 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 150px;
 }
-.header-location h2:hover {
-    text-decoration: underline;
-    
-}
-
 .header-location p {
     font-size: 1.3em;
     text-align: center;
@@ -348,15 +347,16 @@ background-color: rgb(128, 0, 0);
 
 /*!------ Dette er for index siden (Studenthistorier) -----*/
 .studenthistorier {
-    width: 800px;
-    height: 400px;
-    margin: 60px 20px 300px 300px;     /*Justerer hvor den skal ligge på nettsiden*/
+    width: 900px;
+    max-width: 1200px;
+    height: 450px;
+    margin: 60px auto;     /*Justerer hvor den skal ligge på nettsiden*/
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid #ffe5b4;
+    border: 10px solid #ffe5b4;
     position: relative;
     text-align: center;
 }
@@ -374,9 +374,8 @@ background-color: rgb(128, 0, 0);
     right: -100%;   /*Tesksten kommer fra høyre side*/
     position: absolute;
     background: #1f3d4738;
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,58 +386,76 @@ background-color: rgb(128, 0, 0);
 }
 .studenthistorier-title {
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 .studenthistorier-info {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 40px 0;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 30px 0;
     font-weight: 400;
 }
+
+/* BUTTON Style */
+.studenthistorier-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 10rem;
+}
 .studenthistorier-btn {
+    background-color: #800020;
+    width: 35rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
     color: white;
-    background: #800020;
-    padding: 10px 20px;
-    margin: 0 275px;
-    border-radius: 5px;
-    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
     border: none;
-    outline: none;
-    font-weight: 500;
     cursor: pointer;
-    width: 160px;
+}
+.studenthistorier-btn:hover {
+    background-color: #FFB81C;
+    color: black; 
 }
 .studenthistorier-btn a {
-    color: white; 
-    text-decoration: none; 
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .studenthistorier-btn a:hover {
-    text-decoration: underline;
+    text-decoration: none; 
 }
-
 
 
 /* Contact us */
-
 .advisory-section {
-    border: 3px solid #FFB81C;
+    border: 3px solid #ffe5b4;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 20px;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
-
-
 .advisory-section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 30px rgba(255, 184, 28, 0.5);
 }
-
 
 .content {
     display: flex;
@@ -447,15 +464,6 @@ background-color: rgb(128, 0, 0);
     text-align: center;
     gap: 20px;
 }
-
-
-.main-heading {
-    font-size: 2em;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
 
 .contact-details {
     display: flex;
@@ -467,16 +475,13 @@ background-color: rgb(128, 0, 0);
     max-width: 500px;
     margin: 0 auto;
 }
-
-
 .contact-details img {
     width: 150px; 
     height: 180px; 
     border-radius: 12px; 
-    border: 2px solid #FFB81C;
+    border: 2px solid #ffe5b4;
     object-fit: cover; 
 }
-
 
 .contact-details div {
     display: flex;
@@ -486,15 +491,12 @@ background-color: rgb(128, 0, 0);
     text-align: left;
 }
 
-
 .contact-details h3 {
     font-size: 1.2em;
     font-weight: bold;
     color: #333333;
     margin: 0;
 }
-
-
 
 .contact-details ul {
     padding: 0;
@@ -503,11 +505,9 @@ background-color: rgb(128, 0, 0);
     font-size: 1em;
     color: #555555;
 }
-
 .contact-details ul li {
     margin-bottom: 5px;
 }
-
 
 .subtitle {
     font-size: 1.2em;
@@ -527,7 +527,6 @@ background-color: rgb(128, 0, 0);
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
-
 .contact-button:hover {
     background-color: #f5bf42;
     color: #800020;
@@ -851,19 +850,16 @@ background-color: rgb(128, 0, 0);
 
 /* Activity Page Styles - main */
 .Basketball-site .activity-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 20px;
-    display: flex;
 
 }
-
-
 .activity-page main {
-
  flex: 3;
-
 }
 
 /* box-1 styling*/
@@ -873,58 +869,39 @@ background-color: rgb(128, 0, 0);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
-  
-
 }
-
 .box-1 h4 {
-  
     font-size: 1.5rem;
     margin-bottom: 15px;
     color:#ff8000;
-
 }
-
 .box-1 ul {
-
     list-style: none;
     padding: 0;
-
 }
-
 .box-1 ul li {
-
     margin-bottom: 10px;
-
 }
-
 .box-1 ul li a {
-
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3 ease;
-
-
 }
- 
 .box-1 ul li a:hover {
- 
     color: #ff6600;
-
 }
 
- .box-1 img {
-
+.box-1 img {
   width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
 .Basketball-site .activity-page section {
+    width: 100%;
     padding: 30px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -1067,20 +1044,6 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .legal-info ul li a:hover {
     color: #ff9800;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
