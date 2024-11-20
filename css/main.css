@@ -1099,3 +1099,46 @@ background-color: rgb(128, 0, 0);
 }
 
 
+
+
+/* accsessibility page */
+
+
+
+/* img for main-acsessibility */
+
+ .accessibility-page .img-main {
+
+    background-color: #000000; /* Fargen endres, tok bare en farge*/
+    height: 200px;
+    align-items: center;
+    color: blue; /* Fargen skal endres eller kan fjernes helt*/
+    display: flex;
+    border: 1px solid rgb(234, 43, 43); /* Fargen skal endres*/
+    font-size: 20px;
+    
+
+}
+
+
+/* Introduction- section */
+
+.accessibility-page .main-accessibility {
+    
+    padding: 40px; /* kan endres på senere, er bare et eksempel for nå*/
+    margin-top: 40px;
+    margin: 40px 0;  /* Kan fjernes hvis man ønsker*/
+    color: rgb(8, 8, 8);
+
+}
+
+
+ .accessibility-page .effect-intro::after{ /* ikke rør denne, må endre på den*/
+
+    display: table;
+    clear: both;
+    content: "";
+
+}
+
+
