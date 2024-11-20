@@ -615,143 +615,92 @@ background-color: rgb(128, 0, 0);
 
 
 /*!------ Dette er for GitHub siden -----*/
-
-/* Main container for GitHub site content */
 .github-site {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px; 
+    padding: 25px;
+    background-color: #f4f4f4;
 }
 
-/* Responsive design for main-box */
-.github-site .main-box {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.github-site .main-box h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-/* Styling for paragraphs and images within boxes */
-.github-site p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
+.github-site .main-box,
+.github-site .github_3,
+.github-site .github_2,
+.github-site .github_4,
+.github-site .github_5 {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.github-site p:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Styling for images in boxes */
-.github-site img {
-    width: 80%;
-    max-width: 500px;
-    height: auto;
-    margin: 15px auto;
-    display: block;
     border-radius: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.github-site .main-box:hover,
+.github-site .github_3:hover,
+.github-site .github_2:hover,
+.github-site .github_4:hover,
+.github-site .github_5:hover {
+    border-color: #FFC137;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-9px); 
+}
+
+.github-site img {
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.github-site img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+
+.github-site h1,
+.github-site h2,
+.github-site h3 {
+    color: #333333;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Styling for section headers */
-.github-site h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #444;
-    text-align: center;
+.github-site p {
+    color: #555555;
+    line-height: 1.8;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Styling for lists */
 .github-site ul.list {
     list-style-type: disc;
     padding-left: 20px;
-    margin: 0 auto 20px;
-    max-width: 800px;
-    text-align: left;
+    color: #555555;
+    font-family: 'Arial', sans-serif;
 }
 
 .github-site ul.list li {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-    .github-site .main-box h1 {
-        font-size: 2em;
+@media (max-width: 768px) {
+    .github-site .main-box,
+    .github-site .github_3,
+    .github-site .github_2,
+    .github-site .github_4,
+    .github-site .github_5 {
+        padding: 15px;
     }
-
-    .github-site .main-box p.ingress {
-        font-size: 1em;
-    }
-
-    .github-site h2 {
-        font-size: 1.8em;
-    }
-
     .github-site img {
-        width: 90%;
-    }
-
-    .github-site p {
-        font-size: 0.9em;
-    }
-
-    .github-site ul.list li {
-        font-size: 0.9em;
+        max-width: 90%; 
     }
 }
-
-@media screen and (max-width: 480px) {
-    .github-site .main-box h1 {
-        font-size: 1.8em;
-    }
-
-    .github-site .main-box p.ingress {
-        font-size: 0.9em;
-    }
-
-    .github-site h2 {
-        font-size: 1.5em;
-    }
-
-    .github-site img {
-        width: 95%;
-    }
-
-    .github-site p {
-        font-size: 0.85em;
-    }
-
-    .github-site ul.list li {
-        font-size: 0.85em;
-    }
-}
-
 
 
 /* /*!------ Dette er for Activity Page -----*/
