@@ -616,6 +616,143 @@ background-color: rgb(128, 0, 0);
 
 /*!------ Dette er for GitHub siden -----*/
 
+/* Main container for GitHub site content */
+.github-site {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive design for main-box */
+.github-site .main-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.github-site .main-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Styling for paragraphs and images within boxes */
+.github-site p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-site p:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for images in boxes */
+.github-site img {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.github-site img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for section headers */
+.github-site h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: center;
+}
+
+/* Styling for lists */
+.github-site ul.list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.github-site ul.list li {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .github-site .main-box h1 {
+        font-size: 2em;
+    }
+
+    .github-site .main-box p.ingress {
+        font-size: 1em;
+    }
+
+    .github-site h2 {
+        font-size: 1.8em;
+    }
+
+    .github-site img {
+        width: 90%;
+    }
+
+    .github-site p {
+        font-size: 0.9em;
+    }
+
+    .github-site ul.list li {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .github-site .main-box h1 {
+        font-size: 1.8em;
+    }
+
+    .github-site .main-box p.ingress {
+        font-size: 0.9em;
+    }
+
+    .github-site h2 {
+        font-size: 1.5em;
+    }
+
+    .github-site img {
+        width: 95%;
+    }
+
+    .github-site p {
+        font-size: 0.85em;
+    }
+
+    .github-site ul.list li {
+        font-size: 0.85em;
+    }
+}
+
+
 
 /* /*!------ Dette er for Activity Page -----*/
 
