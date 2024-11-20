@@ -653,21 +653,17 @@ background-color: rgb(128, 0, 0);
 }
 
 .github-site img {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 90%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-.github-site h1,
-.github-site h2,
-.github-site h3 {
+.github-site h1, .github-site h2, .github-site h3 {
     color: #333333;
     margin: 0;
     font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
 .github-site p {
