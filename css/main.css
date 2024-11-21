@@ -671,6 +671,7 @@ background-color: rgb(128, 0, 0);
     line-height: 1.8;
     margin: 0;
     font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
 }
 
 .github-site ul.list {
@@ -1058,7 +1059,7 @@ background-color: rgb(128, 0, 0);
 }
 
 @media screen and(min-width: 750px){
-    
+
 }
 
 
