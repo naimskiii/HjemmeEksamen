@@ -941,14 +941,14 @@ background-color: rgb(128, 0, 0);
 }
 
 /* Image Gallery */
-.Basketball-site .image-gallery {
+.Basketball-site .image-gallery, .image-gallery2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     margin: 20px 0;
 }
 
-.Basketball-site .image-gallery img {
+.Basketball-site .image-gallery img  {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -960,6 +960,10 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .image-gallery img:hover {
     transform: scale(1.05);
 }
+
+/* Image gallery 2*/
+
+
 
 /* Footer */
 .Basketball-site .site-footer {
@@ -1068,11 +1072,12 @@ background-color: rgb(128, 0, 0);
 
 
 
+
 /* img for main-acsessibility */
 
  .accessibility-page .img-main {
 
-    background-color: #000000; /* Fargen endres, tok bare en farge*/
+    background-color: #812121; /* Fargen endres, tok bare en farge*/
     height: 200px;
     align-items: center;
     color: blue; /* Fargen skal endres eller kan fjernes helt*/
@@ -1094,4 +1099,32 @@ background-color: rgb(128, 0, 0);
     color: rgb(8, 8, 8);
 
 }
+
+/* Main-Part 2 */
+
+.accessibility-page h1 {
+
+
+    font-size: 20px;
+  
+
+}
+
+
+/* Main-Part 3 */
+
+
+
+/* Main-Part 4*/
+
+
+
+/* Main-Part 5*/
+
+
+/* image gallery  */
+
+
+
+
 
