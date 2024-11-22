@@ -1414,51 +1414,116 @@ background-color: rgb(128, 0, 0);
 
 
 /* accsessibility page */
-
+ .accessibility-page {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    background-color: whitesmoke;
+ }
 
 /* img for main-acsessibility */
- .accessibility-page .img-main {
-    background-color: #000000; /* Fargen endres, tok bare en farge*/
-    height: 200px;
-    align-items: center;
-    color: blue; /* Fargen skal endres eller kan fjernes helt*/
-    display: flex;
-    border: 1px solid rgb(234, 43, 43); /* Fargen skal endres*/
-    font-size: 20px;
+ .accessibility-page .img-main img,
+ .accessibility-page .img-part3 img {
+    
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+
 }
 
 
 /* Introduction- section */
-.accessibility-page .main-accessibility {
-    padding: 40px; /* kan endres på senere, er bare et eksempel for nå*/
-    margin-top: 40px;
-    margin: 40px 0;  /* Kan fjernes hvis man */
-    color: rgb(8, 8, 8);
-}
+.accessibility-page .section {
 
-/* Main-Part 2 */
-
-.accessibility-page h1 {
-
-
-    font-size: 20px;
-  
+    background: white;
+    border-radius: 11px;
+    transition: 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.6rem;
+    
 
 }
 
+.accessibility-page section:hover {
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
 
-/* Main-Part 3 */
-
-
-
-/* Main-Part 4*/
-
-
-
-/* Main-Part 5*/
+}
 
 
-/* image gallery  */
+
+.accessibility-page h1,
+.accessibility-page h2,
+.accessibility-page h3 {
+    
+    color: #0046e0; /* kan endres farge*/
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+.accessibility-page h4,
+.accessibility-page h5 {
+ 
+    color: #6c757d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+
+
+}
+
+
+ .accessibility-page .img-main,
+  .accessibility-page .img-part2,
+  .accessibility-page .img-part3,
+  .accessibility-page .img-part5 {
+
+    border-radius: 12px;
+    margin: 0.5rem 0;
+    height: 150px;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    color: #555;
+    align-items: center;
+    background: #d7d5d5;
+    overflow: hidden;
+
+ 
+}
+
+
+
+
+
+.accessibility-page p {
+
+ line-height: 1.4;
+ margin-bottom: 8px;
+
+}
+ .accessibility-page ul  {
+
+    margin-left: 1.5rem;
+    list-style-type: disc;
+    padding-left: 1.2rem;
+    margin-top: 1.1rem;
+
+
+ }
+
+ .accessibility-page ul li {
+
+    color: grey;
+    margin-bottom: 0.6rem;
+
+
+}
 
 
 
