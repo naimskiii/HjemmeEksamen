@@ -1419,22 +1419,25 @@ background-color: rgb(128, 0, 0);
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
-    background-color: whitesmoke;
- }
+     background-color: whitesmoke;
+     font-family: "Jura", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+}
+ 
 
 /* img for main-acsessibility */
- .accessibility-page .img-main img,
- .accessibility-page .img-part3 img {
+ .accessibility-page .img-main img {
     
-    height: 100%;
+    height: 500px;
     border-radius: 12px;
     object-fit: cover;
-    width: 100%;
+    width: 1200px;
 
 }
 
 
-/* Introduction- section */
+/* section */
 .accessibility-page .section {
     position: relative;
     background: white;
@@ -1454,10 +1457,10 @@ background-color: rgb(128, 0, 0);
 .accessibility-page h2,
 .accessibility-page h3 {
     
-    color: #0046e0; /* kan endres farge*/
-    margin-bottom: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #980606; /* kan endres farge*/
+    margin-bottom: 1.1rem;
     font-weight: bold;
+    font-size: 2.5em;
 
 }
 
@@ -1465,7 +1468,6 @@ background-color: rgb(128, 0, 0);
 .accessibility-page h5 {
  
     color: #6c757d;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
 
@@ -1473,7 +1475,7 @@ background-color: rgb(128, 0, 0);
 }
 
 
- .accessibility-page .img-main,
+
   .accessibility-page .img-part2,
   .accessibility-page .img-part3,
   .accessibility-page .img-part5 {
@@ -1498,8 +1500,9 @@ background-color: rgb(128, 0, 0);
 
 .accessibility-page p {
 
- line-height: 1.4;
+ line-height: 1.9;
  margin-bottom: 8px;
+ font-size: 17px;
 
 }
  .accessibility-page ul  {
