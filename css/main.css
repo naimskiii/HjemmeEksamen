@@ -742,14 +742,17 @@ background-color: rgb(128, 0, 0);
 
 
 /*!------ Dette er for GitHub siden -----*/
-.github-site {
+.main github-site {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 35px; 
     padding: 25px;
-    background-color: #f4f4f4;
+    background-color: white;
 }
+
+
+
 
 .github-site .main-box,
 .github-site .github_3,
@@ -760,15 +763,22 @@ background-color: rgb(128, 0, 0);
     max-width: 800px;
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     padding: 27px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
 }
+
+
+
+
 
 .github-site .main-box:hover,
 .github-site .github_3:hover,
@@ -777,7 +787,7 @@ background-color: rgb(128, 0, 0);
 .github-site .github_5:hover {
     border-color: #FFC137;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-9px); 
+    transform: translateY(-5px); 
 }
 
 .github-site img {
@@ -787,19 +797,55 @@ background-color: rgb(128, 0, 0);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.github-site h1, .github-site h2, .github-site h3 {
-    color: #333333;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+.github-site .main-box img{
+    display: block; 
+    margin: 0 auto; 
 }
 
-.github-site p {
+.github-title  {
+     color: #333333;
+     margin: 0;
+     text-align: center;  
+     font-family: "Chango", serif;
+     font-size: 3em;
+     font-weight: 400;
+     font-style: normal;
+      
+      
+}
+
+ .github-site h2 {
+    color: #333333;
+    margin: 0;
+    font-family:"Chango", serif ;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-decoration: underline rgb(128, 0, 0) 8px;
+}
+
+.github-site h3{
+    color: #333333;
+    margin: 0;
+    font-family:"Chango", serif ;
+    text-align: center;
+    text-decoration: underline rgb(128, 0, 0) 8px;
+}
+
+.ingress{
+    font-family: cursive;
+}
+
+
+.font-same {
+
     color: #555555;
     line-height: 1.8;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.881);
 }
 
 .github-site ul.list {
