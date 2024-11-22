@@ -742,27 +742,67 @@ background-color: rgb(128, 0, 0);
 
 
 /*!------ Dette er for GitHub siden -----*/
-.main github-site {
+
+/* Center the Entire Page */
+.github-site {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: #ffe5b4;
     align-items: center;
-    gap: 35px; 
-    padding: 25px;
-    background-color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 
+/* General Wrapper for the Site */
+.main.github-site {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    gap: 35px; 
+    max-width: 1200px;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);;
+    background-color: white;
 
+}
 
-.github-site .main-box,
-.github-site .github_3,
-.github-site .github_2,
-.github-site .github_4,
-.github-site .github_5 {
+/* Common Card Styles for All Sections */
+.github-site .content-box {
     width: 90%;
     max-width: 800px;
     background-color: #ffffff;
     border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Hover Effect for Cards */
+.github-site .content-box:hover {
+    border-color: #FFC137;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(9px); 
+}
+
+.github-site .main-box{
+    background-color: rgb(128, 0, 0);
+    max-width: 800px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -771,25 +811,21 @@ background-color: rgb(128, 0, 0);
     padding: 27px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     gap: 50px;
     margin-bottom: 30px;
 }
 
-
-
-
-
-.github-site .main-box:hover,
-.github-site .github_3:hover,
-.github-site .github_2:hover,
-.github-site .github_4:hover,
-.github-site .github_5:hover {
+.github-site .main-box:hover{
     border-color: #FFC137;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); 
+    transform: translateY(-12px); 
 }
 
+
+
+/* Common Styles for Images */
 .github-site img {
     max-width: 90%;
     height: auto;
@@ -797,66 +833,132 @@ background-color: rgb(128, 0, 0);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.github-site .main-box img{
-    display: block; 
-    margin: 0 auto; 
+.github-site .github_1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+
 }
 
-.github-title  {
-     color: #333333;
-     margin: 0;
-     text-align: center;  
-     font-family: "Chango", serif;
-     font-size: 3em;
-     font-weight: 400;
-     font-style: normal;
-      
-      
-}
-
- .github-site h2 {
+/* Styling for Main Title */
+.github-title {
     color: #333333;
-    margin: 0;
-    font-family:"Chango", serif ;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    text-decoration: underline rgb(128, 0, 0) 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;  
+    font-family: "Chango", serif;
+    font-size: 4em;
+    font-weight: 400;
 }
 
-.github-site h3{
+/* Subheadings Styling */
+.github-site h2,
+.github-site h3 {
     color: #333333;
-    margin: 0;
-    font-family:"Chango", serif ;
+    font-family: "Chango", serif;
     text-align: center;
     text-decoration: underline rgb(128, 0, 0) 8px;
+    margin-bottom: 20px;
 }
 
-.ingress{
-    font-family: cursive;
-}
-
-
+/* Text Styling for Paragraphs */
 .font-same {
-
-    color: #555555;
+    color: #0e0e0e;
     line-height: 1.8;
     margin: 0;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 500;
     font-style: italic;
-    text-shadow: rgba(0, 0, 0, 0.881);
+    font-size: 1.2em;
 }
 
+/* Styling for Lists */
 .github-site ul.list {
     list-style-type: disc;
     padding-left: 20px;
     color: #555555;
-    font-family: 'Arial', sans-serif;
+    font-family: "Chakra Petch", sans-serif ;
+    margin: 0;
 }
 
 .github-site ul.list li {
     margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Collapsible Section Wrapper */
+.commit-history {
+    background-color: #800020; /* Burgundy */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Collapsible Trigger */
+.commit-history:hover {
+    background-color: #FFB81C; /* Golden Yellow */
+    color: black;
+    transform: scale(1.07);
+}
+
+/* Collapsible Content Styling (Initially Hidden) */
+.commit-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    margin-top: 20px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* Smooth Transition for Content Reveal */
+.commit-content img,
+.commit-content p,
+.commit-content ul {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.5s;
+}
+
+/* Content Reveal When Trigger is Active */
+.commit-history:focus + .commit-content,
+.commit-history:active + .commit-content {
+    max-height: 1000px; /* Large Enough to Fit Content */
+    opacity: 1;
+    padding: 20px;
+}
+
+/* Reveal Inner Content */
+.commit-history:focus + .commit-content img,
+.commit-history:active + .commit-content img,
+.commit-history:focus + .commit-content p,
+.commit-history:active + .commit-content p,
+.commit-history:focus + .commit-content ul,
+.commit-history:active + .commit-content ul {
+    opacity: 1;
+}
+
+/* Specific Styling for Individual Sections (Optional if Needed) */
+.github_2 .content-box { /* For Commit History Section */ 
+
+}
+.github_3 .content-box { /* For Benefits Section */
+
+
+}
+.github_5 .content-box { /* For Reflection Section */
+
+
 }
 
 
