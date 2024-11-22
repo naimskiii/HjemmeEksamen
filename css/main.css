@@ -1436,9 +1436,10 @@ background-color: rgb(128, 0, 0);
 
 /* Introduction- section */
 .accessibility-page .section {
-
+    position: relative;
     background: white;
     border-radius: 11px;
+    z-index: 1;
     transition: 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1.6rem;
@@ -1446,12 +1447,6 @@ background-color: rgb(128, 0, 0);
 
 }
 
-.accessibility-page section:hover {
-    
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-6px);
-
-}
 
 
 
