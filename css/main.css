@@ -1437,6 +1437,18 @@ background-color: rgb(128, 0, 0);
 }
 
 
+.accessibility-page .img-part2 img,
+ .accessibility-page .img-part4 img {
+
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+
+ }
+
+
 /* section */
 .accessibility-page .section {
     position: relative;
@@ -1454,31 +1466,36 @@ background-color: rgb(128, 0, 0);
 
 
 .accessibility-page h1,
-.accessibility-page h2,
-.accessibility-page h3 {
+.accessibility-page h2 {
     
     color: #980606; /* kan endres farge*/
     margin-bottom: 1.1rem;
     font-weight: bold;
+    text-transform: uppercase;
     font-size: 2.5em;
 
-}
-
-.accessibility-page h4,
-.accessibility-page h5 {
- 
-    color: #6c757d;
-    font-size: 1.1rem;
-    margin-bottom: 1.2rem;
-
 
 }
 
+/* source: https://www.w3schools.com/csS/css3_flexbox.asp
+, https://www.w3schools.com/cssref/css3_pr_overflow-x.php*/
+.accessibility-page .img-part2 {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 1rem; 
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f3f2f2;
+    overflow-x: auto; 
+}
 
 
-  .accessibility-page .img-part2,
+
+
+
   .accessibility-page .img-part3,
-  .accessibility-page .img-part5 {
+  .accessibility-page .img-part4 {
 
     border-radius: 12px;
     margin: 0.5rem 0;
@@ -1505,23 +1522,7 @@ background-color: rgb(128, 0, 0);
  font-size: 17px;
 
 }
- .accessibility-page ul  {
 
-    margin-left: 1.5rem;
-    list-style-type: disc;
-    padding-left: 1.2rem;
-    margin-top: 1.1rem;
-
-
- }
-
- .accessibility-page ul li {
-
-    color: grey;
-    margin-bottom: 0.6rem;
-
-
-}
 
 
 
