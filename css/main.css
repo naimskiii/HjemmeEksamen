@@ -22,40 +22,125 @@
     }
 }*/
 
+/* Header style for smaller screens 
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
 
-/*MEDIA FOR INDEX PAGE*/
+    header img {
+        width: 6em; /*Reduserer logo størrelse
+        margin: 0 auto;
+    }
 
-/* General media query for small screens */
+    nav ul {
+        flex-direction: row;
+        gap: 1em;
+        margin: 10px auto;
+    }
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.8em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Header Layout 
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Study Information Grid 
+    .studyInformation {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Collapsible Section Layout 
+    .collapsible-section {
+        margin-top: 15px;
+    }
+
+    .collapsible input[type="checkbox"]:checked + label + .collapsible-content {
+        display: block;
+    }
+
+    /* Footer Layout 
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footerContact, footer .footerExternal, footer .footerSocial {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header Text 
+    header img {
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Adjusting Button Sizes 
+    .buttons, .studenthistorier-btn a, .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+
+/*MEDIA FOR INDEX PAGE
+
+/* General media query for small screens 
 @media screen and (max-width: 1200px) {
     .studyInformation {
-        grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Reduce columns for smaller screens 
         gap: 10px;
     }
 
     .collapsible-section {
-        grid-template-columns: repeat(2, 1fr); /* Adjust collapsible section */
+        grid-template-columns: repeat(2, 1fr); /* Adjust collapsible section 
         gap: 15px;
     }
 
     .studenthistorier {
         width: 100%;
-        height: auto; /* Adjust height for responsive scaling */
+        height: auto; /* Adjust height for responsive scaling 
     }
 
     .studenthistorier-text {
-        font-size: 1em; /* Adjust text size */
+        font-size: 1em; /* Adjust text size 
         padding: 20px;
     }
 
     .advisory-section {
-        max-width: 100%; /* Make it fit within smaller screens */
+        max-width: 100%; /* Make it fit within smaller screens 
         margin: 20px;
     }
     
     .footer-container {
-        flex-direction: column; /* Stack footer sections */
+        flex-direction: column; /* Stack footer sections 
         align-items: flex-start;
-        text-align: center; /* Center-align text */
+        text-align: center; /* Center-align text 
     }
     
     .footerContact, .footerSocial, .footerExternal {
@@ -63,27 +148,27 @@
     }
 }
 
-/* Further adjustments for tablet screens */
+/* Further adjustments for tablet screens 
 @media screen and (max-width: 800px) {
     header {
-        height: auto; /* Adjust header height for better scaling */
+        height: auto; /* Adjust header height for better scaling 
         flex-wrap: wrap;
         padding: 20px;
     }
 
     header img {
-        /*width: 6em;  Scale down logo */
-        margin: 0 auto; /* Center logo */
+        /*width: 6em;  Scale down logo 
+        margin: 0 auto; /* Center logo
     }
 
     nav ul {
-        flex-direction: row; /* Stack navigation links */
+        flex-direction: row; /* Stack navigation links 
         flex-wrap: wrap;
         gap: 10px;
     }
 
     .index-title h1 {
-        font-size: 2em; /* Reduce title size */
+        font-size: 2em; /* Reduce title size 
     }
 
     .index-title .subtext {
@@ -91,47 +176,46 @@
     }
 
     .studyInformation {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; /* Single column layout 
     }
 
     .collapsible-section {
-        grid-template-columns: 1fr; /* Single column collapsibles */
+        grid-template-columns: 1fr; /* Single column collapsibles 
     }
 }
 
-/* Final adjustments for mobile screens */
+/* Final adjustments for mobile screens 
 @media  screen and (max-width: 480px) {
     body {
-        font-size: 10px; /* Scale down font size */
+        font-size: 10px; /* Scale down font size 
     }
 
     .buttons, .studenthistorier-btn-wrapper, .contact-button {
-        width: 100%; /* Full-width buttons */
-        font-size: 0.9rem; /* Adjust font size */
+        width: 100%; /* Full-width buttons 
+        font-size: 0.9rem; /* Adjust font size 
     }
 
     .studenthistorier {
-        height: auto; /* Make card responsive */
+        height: auto; /* Make card responsive 
     }
 
     .advisory-section {
-        padding: 10px; /* Reduce padding */
+        padding: 10px; /* Reduce padding 
     }
 
     .footer-container {
-        flex-direction: column; /* Ensure footer is stacked */
+        flex-direction: column; /* Ensure footer is stacked 
         gap: 10px;
     }
 
     .footerContact h3, .footerSocial h3, .footerExternal h3 {
-        font-size: 1rem; /* Reduce footer headings */
+        font-size: 1rem; /* Reduce footer headings 
     }
 }
 
+/*MEDIA FOR ACTIVTY PAGE
 
-/*MEDIA FOR ACTIVTY PAGE*/
-
-/*MEDIA FOR GITHUB*/
+/*MEDIA FOR GITHUB
 @media (max-width: 768px) {
     .github-site .main-box,
     .github-site .github_3,
@@ -146,10 +230,7 @@
 }
 
 
-
 /*MEDIA FOR ACCESSIBILITY*/
-
-
 
 /* To make scrolling smoother on all pages */
 html {
@@ -1158,7 +1239,7 @@ background-color: rgb(128, 0, 0);
     color: #ff9800;
 }
 
-/* Responsive Design */
+/* Responsive Design 
 @media screen and (max-width: 1024px) {
     .Basketball-site .activity-page {
         padding: 10px;
@@ -1177,17 +1258,14 @@ background-color: rgb(128, 0, 0);
 @media screen and(min-width: 750px){
 
 }
-
+*/
 
 
 /* accsessibility page */
 
 
-
 /* img for main-acsessibility */
-
  .accessibility-page .img-main {
-
     background-color: #000000; /* Fargen endres, tok bare en farge*/
     height: 200px;
     align-items: center;
@@ -1195,19 +1273,14 @@ background-color: rgb(128, 0, 0);
     display: flex;
     border: 1px solid rgb(234, 43, 43); /* Fargen skal endres*/
     font-size: 20px;
-    
-
 }
 
 
 /* Introduction- section */
-
 .accessibility-page .main-accessibility {
-    
     padding: 40px; /* kan endres på senere, er bare et eksempel for nå*/
     margin-top: 40px;
     margin: 40px 0;  /* Kan fjernes hvis man */
     color: rgb(8, 8, 8);
-
 }
 
