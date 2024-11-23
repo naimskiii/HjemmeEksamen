@@ -232,6 +232,100 @@
 
 /*MEDIA FOR ACCESSIBILITY*/
 
+/* Media Queries for responsiveness */
+
+/* For tablets (768px or less) */
+@media (max-width: 768px) {
+    /* Header layout */
+    header {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        width: 6em; /* Scale down logo */
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .studyInformation {
+        grid-template-columns: 1fr; /* Single column layout for study info */
+    }
+
+    .collapsible-section {
+        grid-template-columns: 1fr; /* Single column for collapsible sections */
+    }
+
+    .studenthistorier {
+        width: 100%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .index-title h1 {
+        font-size: 2.5em; /* Scale down title for smaller screens */
+    }
+
+    .index-title .subtext {
+        font-size: 1.5em;
+    }
+}
+
+/* For mobile screens (480px or less) */
+@media (max-width: 480px) {
+    body {
+        font-size: 10px; /* Smaller font size */
+    }
+
+    .buttons, .studenthistorier-btn, .contact-button {
+        font-size: 14px;
+        padding: 8px 15px;
+        width: 100%; /* Full width buttons */
+    }
+
+    .studenthistorier {
+        height: auto; /* Ensure cards are responsive */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer items */
+        gap: 10px;
+    }
+
+    .footerContact h3, .footerSocial h3, .footerExternal h3 {
+        font-size: 1rem; /* Smaller footer headings */
+    }
+
+    .collapsible-section {
+        padding: 20px;
+    }
+}
+
+/* For large screens (above 1200px) */
+@media (min-width: 1200px) {
+    .studyInformation {
+        grid-template-columns: repeat(4, 1fr); /* Keep 4 columns for large screens */
+    }
+
+    .collapsible-section {
+        grid-template-columns: repeat(3, 1fr); /* Adjust for 3 columns */
+    }
+}
+
+
+
+
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
