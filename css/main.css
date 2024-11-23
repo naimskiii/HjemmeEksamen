@@ -232,6 +232,9 @@
 
 /*MEDIA FOR ACCESSIBILITY*/
 
+
+
+
 /* To make scrolling smoother on all pages */
 html {
     scroll-behavior: smooth;
@@ -813,7 +816,7 @@ background-color: rgb(128, 0, 0);
     pointer-events: none;
 }
 
-.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedIn {
+.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedin {
     margin-right: 5px;
 
     
@@ -822,9 +825,9 @@ background-color: rgb(128, 0, 0);
 
 
 
-/*!------ Dette er for GitHub siden -----*/
+/*----THE GITHUB SITE--------*/
 
-/* Center the Entire Page */
+/* whole page is centered */
 .github-site {
     display: flex;
     justify-content: center;
@@ -837,7 +840,7 @@ background-color: rgb(128, 0, 0);
 }
 
 
-/* General Wrapper for the Site */
+/* the main part of the website is centred and is in a column*/
 .main.github-site {
     display: flex;
     flex-direction: column;
@@ -852,7 +855,7 @@ background-color: rgb(128, 0, 0);
 
 }
 
-/* Common Card Styles for All Sections */
+/* same styling for all the sections except for the introduction "mainbox" */
 .github-site .content-box {
     width: 90%;
     max-width: 800px;
@@ -862,7 +865,7 @@ background-color: rgb(128, 0, 0);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    padding: 27px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -871,12 +874,14 @@ background-color: rgb(128, 0, 0);
     text-align: center;
 }
 
-/* Hover Effect for Cards */
+/* Hover for the whole box */
 .github-site .content-box:hover {
     border-color: #FFC137;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     transform: translateY(9px); 
 }
+
+/*amd the introduction "main-box"*/
 
 .github-site .main-box{
     background-color: rgb(128, 0, 0);
@@ -906,7 +911,7 @@ background-color: rgb(128, 0, 0);
 
 
 
-/* Common Styles for Images */
+/* Styles for Images */
 .github-site img {
     max-width: 90%;
     height: auto;
@@ -921,6 +926,8 @@ background-color: rgb(128, 0, 0);
     width: 35%;
 
 }
+
+
 
 /* Styling for Main Title */
 .github-title {
@@ -970,9 +977,9 @@ background-color: rgb(128, 0, 0);
     color: #333;
 }
 
-/* Collapsible Section Wrapper */
+/* button section for github */
 .commit-history {
-    background-color: #800020; /* Burgundy */
+    background-color: rgb(128, 0, 0); 
     color: white;
     border: none;
     padding: 15px 30px;
@@ -984,16 +991,17 @@ background-color: rgb(128, 0, 0);
     text-align: center;
     width: fit-content;
     margin-bottom: 20px;
+    margin-top: 50x;
 }
 
-/* Hover Effect for Collapsible Trigger */
+/* Hover Effect for button */
 .commit-history:hover {
-    background-color: #FFB81C; /* Golden Yellow */
+    background-color: #FFB81C; 
     color: black;
     transform: scale(1.07);
 }
 
-/* Collapsible Content Styling (Initially Hidden) */
+/* the styling for the divs  */
 .commit-content {
     max-height: 0;
     overflow: hidden;
@@ -1003,7 +1011,7 @@ background-color: rgb(128, 0, 0);
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-/* Smooth Transition for Content Reveal */
+/* transition for the content to come out */
 .commit-content img,
 .commit-content p,
 .commit-content ul {
@@ -1011,15 +1019,17 @@ background-color: rgb(128, 0, 0);
     transition: opacity 0.3s ease 0.5s;
 }
 
-/* Content Reveal When Trigger is Active */
+
+/*content comes up when the button is clicked on*/
 .commit-history:focus + .commit-content,
 .commit-history:active + .commit-content {
-    max-height: 1000px; /* Large Enough to Fit Content */
+    max-height: 1000px; 
     opacity: 1;
     padding: 20px;
 }
 
-/* Reveal Inner Content */
+/* to see the inner content */
+/** the source: https://blog.openreplay.com/explained--top-css-sibling-selectors/ and the help of ai */
 .commit-history:focus + .commit-content img,
 .commit-history:active + .commit-content img,
 .commit-history:focus + .commit-content p,
@@ -1029,22 +1039,9 @@ background-color: rgb(128, 0, 0);
     opacity: 1;
 }
 
-/* Specific Styling for Individual Sections (Optional if Needed) */
-.github_2 .content-box { /* For Commit History Section */ 
-
-}
-.github_3 .content-box { /* For Benefits Section */
 
 
-}
-.github_5 .content-box { /* For Reflection Section */
-
-
-}
-
-
-
-/* /*!------ Dette er for Activity Page -----*/
+/* /*------THE ACTIVITY SITE -----*/
 
 /* Main container for basketball page */
 .Basketball-site {
@@ -1413,7 +1410,7 @@ background-color: rgb(128, 0, 0);
 */
 
 
-/* accsessibility page */
+/*-----------THE ACCESSIBILITY SITE---------- */
  .accessibility-page {
     gap: 2rem;
     display: grid;
