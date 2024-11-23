@@ -1057,7 +1057,7 @@ background-color: rgb(128, 0, 0);
     gap: 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 2rem;
+    padding: 1rem;
      background-color: white;
      font-family: "Jura", sans-serif;
      font-optical-sizing: auto;
