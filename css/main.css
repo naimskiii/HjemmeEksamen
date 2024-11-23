@@ -1069,8 +1069,8 @@ background-color: rgb(128, 0, 0);
     color: #333;
 }
 
-/* button section for github */
-.commit-history {
+/* button styling for github */
+.button-figure {
     background-color: rgb(128, 0, 0); 
     color: white;
     border: none;
@@ -1087,7 +1087,7 @@ background-color: rgb(128, 0, 0);
 }
 
 /* Hover Effect for button */
-.commit-history:hover {
+.button-figure:hover {
     background-color: #FFB81C; 
     color: black;
     transform: scale(1.07);
@@ -1113,8 +1113,8 @@ background-color: rgb(128, 0, 0);
 
 
 /*content comes up when the button is clicked on*/
-.commit-history:focus + .commit-content,
-.commit-history:active + .commit-content {
+.button-figure:focus + .commit-content,
+.button-figure:active + .commit-content {
     max-height: 1000px; 
     opacity: 1;
     padding: 20px;
@@ -1122,12 +1122,12 @@ background-color: rgb(128, 0, 0);
 
 /* to see the inner content */
 /** the source: https://blog.openreplay.com/explained--top-css-sibling-selectors/ and the help of ai */
-.commit-history:focus + .commit-content img,
-.commit-history:active + .commit-content img,
-.commit-history:focus + .commit-content p,
-.commit-history:active + .commit-content p,
-.commit-history:focus + .commit-content ul,
-.commit-history:active + .commit-content ul {
+.button-figure:focus + .commit-content img,
+.button-figure:active + .commit-content img,
+.button-figure:focus + .commit-content p,
+.button-figure:active + .commit-content p,
+.button-figure:focus + .commit-content ul,
+.button-figure:active + .commit-content ul {
     opacity: 1;
 }
 
