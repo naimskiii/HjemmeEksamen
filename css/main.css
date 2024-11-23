@@ -260,7 +260,8 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     background-color: #800020;
-    width: 35rem;
+    width: 90%;
+    max-width: 35rem;
     height: 3rem;
     margin-top: 5.5rem;
     margin-bottom: 5rem;
@@ -298,9 +299,9 @@ background-color: rgb(128, 0, 0);
 
 /*!------ This is for index (Studenthistorier) -----*/
 .studenthistorier {
-    width: 900px;
+    width: 90%;
     max-width: 1200px;
-    height: 450px;
+    height: 500px;
     margin: 60px auto;
     border-radius: 20px;
     overflow: hidden;
@@ -320,8 +321,7 @@ background-color: rgb(128, 0, 0);
 .studenthistorier-text {
     width: 100%;
     height: 100%;
-    top: 0;
-    right: -100%;   /*Tesksten kommer fra høyre side*/
+    bottom: -100%;
     position: absolute;
     background: #1f3d4738;
     border-radius: 20px;
@@ -329,10 +329,10 @@ background-color: rgb(128, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 2s;
+    transition: 1s;
 }
 .studenthistorier:hover .studenthistorier-text {
-    right: 0;
+    bottom: 0;
 }
 .studenthistorier-title {
     text-transform: uppercase;
@@ -356,7 +356,8 @@ background-color: rgb(128, 0, 0);
 }
 .studenthistorier-btn {
     background-color: #800020;
-    width: 35rem;
+    width: 90%;
+    max-width: 35rem;
     height: 3rem;
     font-weight: 700;
     font-size: 1rem;
@@ -388,7 +389,6 @@ background-color: rgb(128, 0, 0);
 .studenthistorier-btn a:hover {
     text-decoration: none; 
 }
-
 
 /*!------ This is for index (Contact us) -----*/ 
 .advisory-section {
@@ -1128,3 +1128,67 @@ background-color: rgb(128, 0, 0);
 }
 
 /* Media Queries for responsiveness */
+/* For narrow screens (mobile) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    header img {
+        margin: 0 auto;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .studyInformation {
+        grid-template-columns: 1fr;
+    }
+    .collapsible-section {
+        grid-template-columns: 1fr;
+    }
+    .studenthistorier {
+        height: auto;
+    }
+    .studenthistorier-text {
+        padding: 20px;
+    }
+    .header-location {
+        padding: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* For medium screens (laptop, 16:9 aspect ratio) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .studyInformation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collapsible-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* For ultra-wide screens (desktop, 21:9 aspect ratio) */
+@media (min-width: 1200px) {
+    .studyInformation {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .collapsible-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-container {
+        flex-direction: row;
+    }
+    main {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
