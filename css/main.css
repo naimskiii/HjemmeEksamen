@@ -1034,11 +1034,12 @@ background-color: rgb(128, 0, 0);
 /* Subheadings Styling */
 .github-site h2,
 .github-site h3 {
-    color: #333333;
+    color: rgb(0, 0, 0);
     font-family: "Chango", serif;
     text-align: center;
     text-decoration: underline rgb(128, 0, 0) 8px;
     margin-bottom: 20px;
+    
 }
 
 /* Text Styling for Paragraphs */
@@ -1507,7 +1508,7 @@ background-color: rgb(128, 0, 0);
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
-     background-color: whitesmoke;
+     background-color: white;
      font-family: "Jura", sans-serif;
      font-optical-sizing: auto;
      font-style: normal;
@@ -1574,7 +1575,7 @@ background-color: rgb(128, 0, 0);
     gap: 1rem; 
     padding: 1rem;
     border-radius: 12px;
-    background-color: #f3f2f2;
+    background-color: white;
     overflow-x: auto; 
 }
 
@@ -1593,7 +1594,7 @@ background-color: rgb(128, 0, 0);
     justify-content: center;
     color: #555;
     align-items: center;
-    background: #d7d5d5;
+    background: white;
     overflow: hidden;
 
  
