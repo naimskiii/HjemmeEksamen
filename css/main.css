@@ -934,20 +934,18 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .activity-page p {
     font-size: 1rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.9;
     text-align: center;
 }
 .Basketball-site .activity-page a {
     color: #e6008a;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold
 }
 .Basketball-site .activity-page a:hover {
     color: #000000;
     text-decoration: underline;
 }
-
-
 
 .health ul {
     list-style: disc inside; 
@@ -970,6 +968,9 @@ background-color: rgb(128, 0, 0);
     gap: 10px;
     margin: 20px 0;
 }
+
+
+
 .Basketball-site .image-gallery img  {
     width: 100%;
     height: auto;
