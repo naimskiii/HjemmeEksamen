@@ -1052,81 +1052,87 @@ background-color: rgb(128, 0, 0);
 
 
 /*-----------THE ACCESSIBILITY SITE---------- */
- .accessibility-page {
-    gap: 8rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 5rem;
+.accessibility-main {
+    margin: auto;
+    margin-bottom: 6rem;
+    padding: 2rem;
 }
-/* img for main-acsessibility */
- .accessibility-page .main-bacground_img img {
-    height: 500px;
-    object-fit: cover;
-    width: 1200px;
-    margin-bottom: 2rem;
+.accessibility-p {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
 }
-.accessibility-page h1,
-.accessibility-page h2 {
+.accessibility-figure {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.accessibility-img {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accessibility-figure img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.smaller-image img {
+    width: 60%;
+}
+.accessibility-figure figcaption {
+    text-align: center;
+    font-size: small;
+    padding-top: 1rem;
+    width: 100%;
+}
+.accessibility-main h1,
+.accessibility-main h2 {
     color: #980606;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 2.5em;
 }
-.accessibility-page p {
-    text-align: center;
-}
-.accessibility-page .img-sketches img,
-.accessibility-page .img-part4 img {
+.main-background-img img {
     width: 100%;
-    max-width: 1200px;
     height: 500px;
-    border-radius: 12px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
-/* section */
-.accessibility-page .section {
-    position: relative;
-    background: white;
-    border-radius: 11px;
-    z-index: 1;
-    transition: 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1.6rem;
+.lighthouse-test {
+    text-align: center;
+    padding: 2rem;
+}
+.scroll-test {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.scroll-test img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
-/* SOURCE: https://www.w3schools.com/csS/css3_flexbox.asp
-, https://www.w3schools.com/cssref/css3_pr_overflow-x.php*/
-.accessibility-page .img-sketches {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 1rem; 
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: white;
-    overflow-x: auto; 
-}
-.accessibility-page .img-part3,
-.accessibility-page .img-part4 {
-    border-radius: 12px;
-    margin: 0.5rem 0;
-    height: 150px;
-    display: flex;
-    font-size: 1.1rem;
-    justify-content: center;
-    color: #555;
-    align-items: center;
-    background: white;
-    overflow: hidden;
-}
-.accessibility-page p {
- line-height: 1.9;
- margin-bottom: 8px;
- font-size: 17px;
-}
 
 /* Media Queries for responsiveness Website */
 /* For narrow screens (mobile) */

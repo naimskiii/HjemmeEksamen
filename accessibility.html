@@ -18,7 +18,6 @@
              <!-- The Oslomet Logo: https://student.oslomet.no/canvas -->
              <img src="images//osloMet_Logo.jpg" alt=" Oslomet logo">
          </a>
-
          <!-- The links in the navbar -->
         <nav>
             <ul>
@@ -31,15 +30,14 @@
     </header>
 
  <!-- Main content of the page starts here -->
-     <main class="accessibility-page">
-        <!-- Section for introduction to Accsessibility page-->
-         <section class="introduction">
-            <h1> Accessibility </h1>
-            <picture class="main-bacground_img">
-                <img src="images/accessibility-forside.jpg" alt=" main">
-            </picture>
-            <!-- A little introduction on why accessibility is important-->
-             <p>
+ <main class="accessibility-main">
+    <h1 class="other-pages-titles">Accessibility</h1>
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <picture class="main-background-img">
+            <img src="images/accessibility-forside.jpg" alt="Main accessibility image">
+        </picture>
+        <p class="accessibility-p">
             Website accessibility ensures that everyone can use a site easily, regardless of their devices, internet speed, or individual needs.
             It focuses on creating clear layouts, simple navigation, and adaptable designs that work across different screen sizes and technologies.
             An accessible website is easy to read, quick to load, and intuitive for all users. 
@@ -47,90 +45,64 @@
             This approach not only improves usability but also benefits a wider audience.
         </p>
     </section>
-    
+
+    <!-- Planning Phase Section -->
     <section class="planning-phase">
-        <h2> Planning phase </h2>
-        <picture class="img-sketches">
-            <img src="images/sketch_activty.png" alt="sketch1">
-            <img src="images/ske.png" alt="sketch2">
-            <img src="images/sketch_index.png" alt="sketch3">
-        </picture>
-        <p>
-        In the beginning of our journey, we decided to draw some sketches of how we would like our website to look like. 
-        We made some clear points we needed to follow to make our website as accessible as possible. 
+        <h2>Planning Phase</h2>
+        <div class="accessibility-img">
+            <figure class="accessibility-figure">
+                <img src="images/index-sketch.jpg" alt="Sketch of activity page layout">
+                <figcaption>Sketch of index page layout.</figcaption>
+            </figure>
+            <figure class="accessibility-figure smaller-image">
+                <img src="images/aktivity-sketch.jpg" alt="Sketch of activity page layout">
+                <figcaption>Sketch of first planned activity layout.</figcaption>
+            </figure>
+        </div>
+        <p class="accessibility-p">
+            In the beginning of our journey, we decided to draw some sketches of how we would like our website to look like. <br>
+        We made some clear points we needed to follow to make our website as accessible as possible. <br>
         We also made multiple sketches and disregarded ideas that we felt did not look aesthetically pleasing, or fit the criteria.
-        As you can see on the pictures abow. <br>
-        On the other hand, we didnt neccesserily make a sketch for the basketball activity layout however it was discussed oral. 
-        We also changed our activity page from "Study abroad page” where it would match our home page "to a basketball page" to meet the requirements of our exam. <br>
+        As you can see on the pictures abow.
+        On the other hand, we didnt neccesserily make a sketch for the basketball activity layout however it was discussed oral.
+        We also changed our activity page from "Study abroad page” (second photo) where it would match our home page. However now "to a basketball page" to meet the requirements of our exam.
         Our home site header and image looks similar to what we have now although we changed the picture to make it look more appealing to our color combination.
         </p>
-     </section>
+    </section>
 
-
-     <section id="test">
-     <h2> The lighthouse test (Automated test)
-        </h2>
-        <p>hei</p>
-     <div class="img-part4">
-     <img src="images/testfør.png" alt="testfør">
-     <img src="images/testetter.png" alt="testetter">
-     <img src="images/valditefør.png" alt="valditefør">
-     <img src="images/valditeetter.png" alt="valditeetter">
-     
-     
-     <section class="lighthouse-test">
-        <h2> The lighthouse test </h2>
-        <picture class="img-part4">
-            <img src="images/testfør.png" alt="testfør">
-            <img src="images/testetter.png" alt="testetter">
-            <img src="images/valditefør.png" alt="valditefør">
-            <img src="images/valditeetter.png" alt="valditeetter">
+    <!-- Lighthouse Test Section -->
+    <section class="lighthouse-test">
+        <h2>The Lighthouse Test</h2>
+        <picture class="scroll-test">
+            <img src="images/test_før.jpg" alt="Before the lighthouse-test">
+            <img src="images/test_etter.jpg" alt="After the lighthouse-test">
         </picture>
-        <p>
-            The Lighthouse test is a tool that checks how good a website is. 
-            It tells you how fast, easy to use, and accessible your site is for all kinds of people, including those with disabilities.
-            Our test results...
-        </p> 
-     </section>
-
-     <section id="done-better">
-        <h2> How it is accessible and what we could’ve done better </h2>
-        <p> How our site is accessible 
-           What we could've done better is 
+        <picture class="scroll-test">
+            <img src="images/valdite_før.jpg" alt="Before validation test">
+            <img src="images/valdite_etter.jpg" alt="After validation test">
+        </picture>
+        <p class="accessibility-p">
+            The Lighthouse test is a tool that checks how good a website is. It tells you how fast, easy to use, and accessible your site is for all kinds of people, including those with disabilities.
+            Our test results highlighted areas for improvement, which we worked on to enhance the user experience.
         </p>
-       </section>
-     
-
-
-      
-     </main>
-
-     
-
-
-
-
+    </section>
+</main>
 
 <!--footer element for University info and social media-->
-<footer class id="footer">
-
+<footer id="footer">
     <div class="footer-container">
-        
 <!--This first div element is for the University Contact info-->
 <div class="footerContact">
     <h3>Contact information</h3>
-    <ul>
-        <br>
+    <ul> 
         <li>Oslo Metropolitian University</li>
-        <br>
-        <li>Postbox, St Olavs plass 0130 Oslo</li>
-        <br>
+    
+        <li>Postbox, St Olavs plass 0130 Oslo</li> 
         <li> 
             <a href="tel:+4767235000">Tel: +47 67 23 50 00</a>
-        </li>
-        <br>
+        </li> 
         <li>
-            <a href="mailto: post@oslomet.no">Email: post@oslomet.no</a>
+            <a href="mailto:post@oslomet.no">Email: post@oslomet.no</a>
         </li>   
     </ul>
 </div>
@@ -138,7 +110,6 @@
 <!--This second div is used for external links-->
 <div class = footerExternal>
     <h3>Other useful links</h3>
-    <br>
     <ul>
         <li><a href="https://www.oslomet.no/studier" target="_blank">Studies</a></li>
         <li><a href="https://www.oslomet.no/forskning" target="_blank">Our reasearch</a></li>
@@ -146,24 +117,15 @@
         <li><a href="https://www.oslomet.no/en/about" target="_blank">About Oslomet</a></li>
         <li><a href="https://www.oslomet.no/om/for-studenter" target="_blank">For students</a></li>
       </ul>
-
-
 </div>
 
 <!--The third div element is for the social media-->
 <div class="footerSocial">
-<h3>Follow us on our Social Media Platforms</h3>
-<br>
-
-<a href ="https://www.instagram.com/oslomet/" target="_blank" aria-label="Our Instagram page"><i class="fab fa-instagram"></i>
-</a>
-<a href ="https://www.facebook.com/oslomet" target="_blank" aria-label="Our Facebook page"><i class="fab fa-facebook"></i>
-</a>
-<a href ="https://www.linkedin.com/school/oslomet" target="_blank" aria-label="Our LinkedIn page"><i class="fab fa-linkedin"></i>
-</a>
+    <h3>Follow us on our Social Media Platforms</h3> 
+    <a href ="https://www.instagram.com/oslomet/" target="_blank" aria-label="Our Instagram page"><i class="fab fa-instagram"></i></a>
+    <a href ="https://www.facebook.com/oslomet" target="_blank" aria-label="Our Facebook page"><i class="fab fa-facebook"></i></a>
+    <a href ="https://www.linkedin.com/school/oslomet" target="_blank" aria-label="Our LinkedIn page"><i class="fab fa-linkedin"></i></a>
 </div>
-
-        
 </div>
 </footer>
     
