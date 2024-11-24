@@ -1089,7 +1089,19 @@ background-color: rgb(128, 0, 0);
     padding-top: 1rem;
     width: 100%;
 }
-.accessibility-main h1,
+
+
+.accessibility-main h1 {
+    margin-top: 100px;
+    color: #980606;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.5em;
+
+}
+
 .accessibility-main h2 {
     color: #980606;
     text-align: center;
