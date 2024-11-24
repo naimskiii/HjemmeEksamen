@@ -1062,21 +1062,7 @@ background-color: rgb(128, 0, 0);
      font-optical-sizing: auto;
      font-style: normal;
 }
-/* img for main-acsessibility */
- .accessibility-page .img-main img {
-    height: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-    width: 1200px;
-}
-.accessibility-page .img-part2 img,
-.accessibility-page .img-part4 img {
-    width: 100%;
-    max-width: 1200px;
-    height: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-}
+
 /* section */
 .accessibility-page .section {
     position: relative;
@@ -1087,14 +1073,16 @@ background-color: rgb(128, 0, 0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1.6rem;
 }
-.accessibility-page h1,
-.accessibility-page h2 {
-    color: #980606; /* kan endres farge*/
-    margin-bottom: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 2.5em;
+
+/* img for main-acsessibility */
+.accessibility-page .img-main img {
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+    width: 1200px;
 }
+
+/*div and img for the process pictures*/
 /* SOURCE: https://www.w3schools.com/csS/css3_flexbox.asp
 , https://www.w3schools.com/cssref/css3_pr_overflow-x.php*/
 .accessibility-page .img-part2 {
@@ -1107,24 +1095,89 @@ background-color: rgb(128, 0, 0);
     background-color: white;
     overflow-x: auto; 
 }
-.accessibility-page .img-part3,
+
+.accessibility-page .img-part2 img {
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/*div and img for the lighthouse test 
 .accessibility-page .img-part4 {
     border-radius: 12px;
-    margin: 0.5rem 0;
-    height: 150px;
+    margin: 1rem 0;
     display: flex;
-    font-size: 1.1rem;
     justify-content: center;
-    color: #555;
     align-items: center;
+    color: #555;
     background: white;
-    overflow: hidden;
+    font-size: 1.1rem;
+    overflow-x:auto;
+     /* Added properties for better appearance 
+     width: 100%;
+     max-width: 1200px;
+     height: 400px; /* Adjust as needed for a good aspect ratio 
+     padding: 1rem;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visuals 
+
 }
+
+.accessibility-page .main-part4 .img-part4 img{
+    max-width: 100%; /* Prevents image from overflowing the div width 
+    max-height: 100%; /* Prevents image from overflowing the div height 
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio 
+    border-radius: 8px; /* Optional: matches the parent div's rounded corners 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for aesthetics 
+}*/
+
+/* div and img for the lighthouse test */
+.accessibility-page .img-part4 {
+    border-radius: 12px;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next row if needed */
+    justify-content: center; /* Centers images horizontally */
+    align-items: center; /* Centers images vertically within the container */
+    gap: 0.5rem; /* Adds space between images */
+    color: #555;
+    background: white;
+    font-size: 1.1rem;
+    overflow: hidden; /* Removes vertical and horizontal scrolling */
+    width: 100%;
+    max-width: 1200px;
+    height: auto; /* Dynamically adjusts based on content */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Making the images even smaller */
+.accessibility-page .main-part4 .img-part4 img {
+    flex: 1 1 calc(15% - 0.5rem); /* Each image takes up 15% of the row's width minus the gap */
+    max-width: calc(15% - 0.5rem); /* Ensures smaller width */
+    height: auto; /* Keeps aspect ratio intact */
+    object-fit: cover; /* Ensures images fill their space without distortion */
+    border-radius: 8px; /* Matches container's style */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*styling of the headings and subheading*/
+.accessibility-page h1,
+.accessibility-page h2 {
+    color: #980606; /* kan endres farge*/
+    margin-bottom: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
 .accessibility-page p {
  line-height: 1.9;
  margin-bottom: 8px;
  font-size: 17px;
 }
+
 
 /* Media Queries for responsiveness Website */
 /* For narrow screens (mobile) */
