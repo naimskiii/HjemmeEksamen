@@ -649,7 +649,6 @@ background-color: rgb(128, 0, 0);
 .github-site h2,
 .github-site h3 {
     color: rgb(0, 0, 0);
-    font-family: "Chango", serif;
     text-align: center;
     text-decoration: underline rgb(128, 0, 0) 8px;
     margin-bottom: 20px;
@@ -1127,7 +1126,7 @@ background-color: rgb(128, 0, 0);
  font-size: 17px;
 }
 
-/* Media Queries for responsiveness */
+/* Media Queries for responsiveness Website */
 /* For narrow screens (mobile) */
 @media (max-width: 768px) {
     header {
