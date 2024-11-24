@@ -1077,7 +1077,7 @@ background-color: rgb(128, 0, 0);
 .accessibility-page p {
     text-align: center;
 }
-.accessibility-page .img-part2 img,
+.accessibility-page .img-sketches img,
 .accessibility-page .img-part4 img {
     width: 100%;
     max-width: 1200px;
@@ -1099,7 +1099,7 @@ background-color: rgb(128, 0, 0);
 
 /* SOURCE: https://www.w3schools.com/csS/css3_flexbox.asp
 , https://www.w3schools.com/cssref/css3_pr_overflow-x.php*/
-.accessibility-page .img-part2 {
+.accessibility-page .img-sketches {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
