@@ -735,6 +735,7 @@ background-color: rgb(128, 0, 0);
 
 /*------THE ACTIVITY SITE -----*/
 /* Main container for basketball page */
+/*Source: https://www.w3schools.com/css/css3_flexbox.asp*/
 .Basketball-site {
     display: flex;
     flex-direction: column;
@@ -743,6 +744,7 @@ background-color: rgb(128, 0, 0);
     font-family: Arial, sans-serif;
 }
 /* Header Styling */
+/*inspiration from:  Source: https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
 .Basketball-site .site-header {
     position: fixed;
     display: flex;
@@ -758,6 +760,7 @@ background-color: rgb(128, 0, 0);
     box-shadow: 0 2px 4px rgba(245, 247, 247, 0.3);
 }
 /* Logo style*/
+/*Source from: https://www.w3schools.com/css/css_align.asp*/
 .Basketball-site .logo img {
     margin-right: 10px;
     width: 85px;
@@ -774,6 +777,7 @@ background-color: rgb(128, 0, 0);
     color: rgb(255, 115, 0);
 }
 /* Navigation style - menu */
+/*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
 .Basketball-site nav ul {
     float: flex;
     margin: 0;
@@ -786,7 +790,7 @@ background-color: rgb(128, 0, 0);
  margin-left: auto;
  align-items: center;
 }
-.Basketball-site nav ul a {
+.Basketball-site nav ul a{
     color: rgb(255, 255, 255);
     border: 3px;
     text-decoration: none;
@@ -807,6 +811,7 @@ background-color: rgb(128, 0, 0);
     background-color: #e65c00;
 }
 /* image-basketball Section */
+/* Source: https://www.w3schools.com/css/css_positioning.asp */
 .Basketball-site .image-basketball {
     position: relative;
     display: flex;
@@ -827,6 +832,8 @@ background-color: rgb(128, 0, 0);
     z-index: -1;
     opacity: 0.5;
 }
+
+/* Source from: https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
 .Basketball-site .image-basketball h1,
 .Basketball-site .image-basketball p {
     color: #fff;
@@ -834,6 +841,7 @@ background-color: rgb(128, 0, 0);
     margin: 0;
 }
 /* google fonts */
+/* Source:  https://fonts.google.com/specimen/Permanent+Marker*/
  .google-fonts {
     font-family: "Permanent Marker", cursive;
     font-weight: 500px;
@@ -871,7 +879,9 @@ background-color: rgb(128, 0, 0);
     margin: 0 auto;
 }
 .activity-page main {
+
  flex: 3;
+
 }
 /* box-1 styling*/
 .activity-page .box-1 {
@@ -947,6 +957,8 @@ background-color: rgb(128, 0, 0);
     text-decoration: underline;
 }
 
+/* Section: Health Benefits */
+
 .health ul {
     list-style: disc inside; 
     padding: 0;
@@ -962,13 +974,13 @@ background-color: rgb(128, 0, 0);
 }
 
 /* Image Gallery */
+/*inspiration from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout*/
 .Basketball-site .image-gallery, .image-gallery2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     margin: 20px 0;
 }
-
 
 
 .Basketball-site .image-gallery img  {
@@ -983,6 +995,7 @@ background-color: rgb(128, 0, 0);
     transform: scale(1.05);
 }
 /* Footer for Activity Page */
+/*Inspirtion from: https://www.crunchyroll.com/videos/popular*/
 .Basketball-site .site-footer {
     background: linear-gradient(0deg, rgba(90, 192, 255, 0.8), #ffffff);
     color: #fc9004;
