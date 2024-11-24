@@ -1152,12 +1152,25 @@ background-color: rgb(128, 0, 0);
     .header-location {
         padding: 20px;
     }
+    .accessibility-main {
+        padding: 1rem;
+    }
+    .accessibility-p {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .accessibility-figure img {
+        width: 80%;
+        margin-left: 0;
+    }
+    .scroll-test img {
+        width: 80%;
+    }
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
 }
-
 /* For medium screens (laptop, 16:9 aspect ratio) */
 @media (min-width: 769px) and (max-width: 1199px) {
     .studyInformation {
@@ -1171,7 +1184,6 @@ background-color: rgb(128, 0, 0);
         text-align: left;
     }
 }
-
 /* For ultra-wide screens (desktop, 21:9 aspect ratio) */
 @media (min-width: 1200px) {
     .studyInformation {
