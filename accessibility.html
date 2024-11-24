@@ -16,7 +16,7 @@
          <a href="index.html">
 
              <!-- The Oslomet Logo: https://student.oslomet.no/canvas -->
-             <img src="images//osloMet_Logo.jpg" alt=" Oslomet logo">
+             <img src="images//osloMet_Logo.jpg" alt=" Oslomet logo, link to homepage">
          </a>
          <!-- The links in the navbar -->
         <nav>
@@ -82,9 +82,15 @@
             <img src="images/valdite_etter.jpg" alt="After validation test">
         </picture>
         <p class="accessibility-p">
-            The Lighthouse test is a tool that checks how good a website is. It tells you how fast, easy to use, and accessible your site is for all kinds of people, including those with disabilities.
-            Our test results highlighted areas for improvement, which we worked on to enhance the user experience.
-        </p>
+            To test our website, we used the Lighthouse Test continuously for each page. <br>
+            At first, it told us that our image elements do not have explicit width and height, so we tried to fix that. <br>
+            Another thing the test told us was that we have a error where (br) is not allowed as child of element (ul).
+            This error happend at the index page, so that was another thing we fixed.
+            We had the same background-color coordinate (#800020) on our buttons' when hovered on, 
+            so to be able to see it clearer we changed it to light yellow (#FFB81C) when hovered on. <br>
+            This made the site more accessible, along with following a guideline for the headings in the correct order. 
+            To have a correct order we used h1 only for the main headings, by reusing h2 and h3 by using only on the footer.
+            </p>
     </section>
 </main>
 
@@ -128,6 +134,5 @@
 </div>
 </div>
 </footer>
-    
 </body>
 </html>
