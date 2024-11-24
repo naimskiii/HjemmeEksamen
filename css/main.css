@@ -790,7 +790,7 @@ background-color: rgb(128, 0, 0);
     color: rgb(255, 255, 255);
     border: 3px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
     color: white;
     text-shadow: 2px 2px 4px #f67b16;
     padding: 10px 15px;
@@ -946,6 +946,23 @@ background-color: rgb(128, 0, 0);
     color: #000000;
     text-decoration: underline;
 }
+
+
+
+.health ul {
+    list-style: disc inside; 
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px; 
+    text-align: left; /
+}
+
+.health ul li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #171615; 
+}
+
 /* Image Gallery */
 .Basketball-site .image-gallery, .image-gallery2 {
     display: grid;
@@ -1001,15 +1018,7 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .footer-links ul li a:hover {
     color: #ff9800;
 }
-.Basketball-site .social-media a {
-    color: #ff9a16;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 24px;
-}
-.Basketball-site .social-media a:hover {
-    color: #ff9800;
-}
+
 .Basketball-site .legal-info {
     font-size: 14px;
     color: #292727;
@@ -1031,25 +1040,6 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .legal-info ul li a:hover {
     color: #ff9800;
 }
-/* Responsive Design for Activity Page
-@media screen and (max-width: 1024px) {
-    .Basketball-site .activity-page {
-        padding: 10px;
-        width: 60px;
-    }
-
-    .Basketball-site .image-basketball h1 {
-        font-size: 3rem;
-    }
-
-    .Basketball-site .image-basketball p {
-        font-size: 1rem;
-    }
-}
-@media screen and(min-width: 750px){
-}
-*/
-
 
 /*-----------THE ACCESSIBILITY SITE---------- */
 .accessibility-main {
@@ -1132,7 +1122,6 @@ background-color: rgb(128, 0, 0);
     flex-shrink: 0;
     object-fit: cover;
 }
-
 
 /* Media Queries for responsiveness Website */
 /* For narrow screens (mobile) */
