@@ -16,8 +16,7 @@ body {
     padding: 0;
 }
 
-/* CSS for Navigation - Bar */
-
+/* CSS NAVIGATION - BAR  */
 /* Design for the header container */
 header {
     position:fixed;
@@ -68,8 +67,79 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-/* END - Navigation bar */
+/* END - NAVIGATION - BAR*/
 
+/* CSS FOR FOOTER*/
+#footer{
+    background-color: rgb(128, 0, 0);
+    padding: 20px;
+    color: white;
+    margin-top: 100px;
+}
+/*Styling for the whole footer container*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+.footerContact, .footerSocial, .footerExternal{
+    flex: 1;
+}
+.footerContact{
+    text-align: left;
+}
+.footerSocial{
+    text-align: right;
+}
+.footerExternal{
+    text-align: center;
+}
+.footerContact h3, .footerExternal h3, .footerSocial h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.footerContact ul, .footerExternal ul{
+    list-style-type:none;
+    padding:0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
+    text-decoration: underline;
+}
+.footerSocial a, .footerContact a, .footerExternal a{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: medium;
+    margin: 0 10px;
+}
+ /*SOURCE: https://russmaxdesign.github.io/aria-label-popover/*/
+.footerSocial a:hover::after {
+    content: attr(aria-label); 
+    position: absolute;
+    bottom: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    pointer-events: none;
+}
+.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedin {
+    margin-right: 5px;
+}
+
+/*---- CSS FOR INDEX - PAGE --------*/
 /* Background Main OsloMet Img */
 .backgroung_OsloMet {
     position: relative;
@@ -87,7 +157,6 @@ nav ul li a:hover::after {
     transform: translate(-50%, -50%);   
     z-index: -1;                      
 }
-
 
 /* Styles for class index - title, h1 and the subtext */
 .index-title {
@@ -173,7 +242,7 @@ nav ul li a:hover::after {
     grid-row: 2;
 }
 
-/*!------ Dette er for index siden (Collapsible - section) -----*/
+/*!------ index page (Collapsible - section) -----*/
 .header-location h2 {
     font-size: 2.3em;
     text-align: center;
@@ -184,7 +253,7 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 25px;
 }
-/* Sentraliserer collapsible-seksjonen på siden */
+/* Centers collapsible-section */
 .collapsible-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -195,7 +264,7 @@ nav ul li a:hover::after {
     justify-items: center;
     font-size: 1.2em;
 }
-/* Styling for hver collapsible-enhet */
+/* Styling for each collapsible */
 .collapsible {
     max-width: 100%;
     width: 100%;
@@ -205,7 +274,7 @@ nav ul li a:hover::after {
 .collapsible input {
     display: none;
 }
-/* Justerer label i collapsible for bedre design */
+/* Adjusts label in collapsible */
 .collapsible label {
     position: relative;
     font-weight: 600;
@@ -218,9 +287,9 @@ nav ul li a:hover::after {
     padding: 15px;
     border-radius: 4px;
     z-index: 1;
-    text-align: center; /* Sentrerer teksten i label */
+    text-align: center;
 }
-/* Oppretter pluss-ikon som roterer når åpnet */
+/* Creates plus icon that rotates when opened */
 .collapsible label::after {
     content: "+";
     position: absolute;
@@ -230,11 +299,10 @@ nav ul li a:hover::after {
     font-size: 18px;
     transition: transform 0.3s ease;
 }
-/* Roterer minus-ikon når åpnet */
+/* Rotates minus icon when opened */
 .collapsible input:checked + label::after {
     content: "-";
 }
-/* Styling for kollapsbart innhold */
 .collapsible-content {
     max-height: 0;
     overflow: hidden;
@@ -247,7 +315,7 @@ nav ul li a:hover::after {
     opacity: 0;
     transition: all 0.3s ease;
 }
-/* Åpner innholdet når checkbox er sjekket */
+/* Opens the content when the checkbox is checked */
 .collapsible input:checked ~ .collapsible-content {
     max-height: 500px; 
     padding: 15px;
@@ -297,7 +365,7 @@ th{
 background-color: rgb(128, 0, 0);
 }
 
-/*!------ This is for index (Studenthistorier) -----*/
+/*index page (Studenthistorier) */
 .studenthistorier {
     width: 90%;
     max-width: 1200px;
@@ -346,7 +414,6 @@ background-color: rgb(128, 0, 0);
     margin: 30px 0;
     font-weight: 400;
 }
-
 /* BUTTON Style */
 .studenthistorier-btn-wrapper {
     display: flex;
@@ -390,7 +457,7 @@ background-color: rgb(128, 0, 0);
     text-decoration: none; 
 }
 
-/*!------ This is for index (Contact us) -----*/ 
+/*index page (Contact us)*/ 
 .advisory-section {
     border: 3px solid #ffe5b4;
     border-radius: 12px;
@@ -477,79 +544,8 @@ background-color: rgb(128, 0, 0);
 }
 
 
-/*STYLE FOR FOOTER*/
-#footer{
-    background-color: rgb(128, 0, 0);
-    padding: 20px;
-    color: white;
-    margin-top: 100px;
-}
-/*Styling for the whole footer container*/
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:0 20px;
-}
-.footerContact, .footerSocial, .footerExternal{
-    flex: 1;
-}
-.footerContact{
-    text-align: left;
-}
-.footerSocial{
-    text-align: right;
-}
-.footerExternal{
-    text-align: center;
-}
-.footerContact h3, .footerExternal h3, .footerSocial h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: large;
-}
-.footerContact ul, .footerExternal ul{
-    list-style-type:none;
-    padding:0;
-    margin: 0;
-    font-size: 0.9rem;
-}
-.footerContact ul li a:hover, .footerExternal ul li a:hover, .footerSocial li a:hover{
-    text-decoration: underline;
-}
-.footerSocial a, .footerContact a, .footerExternal a{
-    position: relative;
-    color:white;
-    text-decoration: none;
-    font-size: medium;
-    margin: 0 10px;
-}
- /*SOURCE: https://russmaxdesign.github.io/aria-label-popover/*/
-.footerSocial a:hover::after {
-    content: attr(aria-label); 
-    position: absolute;
-    bottom: -30px; 
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 10;
-    opacity: 1;
-    pointer-events: none;
-}
-.fab .fa-instagram, .fab .fa-facebook, .fab .fa-linkedin {
-    margin-right: 5px;
-}
-
-
-/*----THE GITHUB SITE--------*/
-/* whole page is centered */
+/*---- CSS FOR THE GITHUB SITE--------*/
+/* The whole page is centered */
 .github-site {
     display: flex;
     justify-content: center;
@@ -597,7 +593,7 @@ background-color: rgb(128, 0, 0);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     transform: translateY(9px); 
 }
-/*the introduction "main-box"*/
+/*The introduction "main-box"*/
 .github-site .main-box{
     background-color: rgb(128, 0, 0);
     max-width: 800px;
@@ -733,7 +729,7 @@ background-color: rgb(128, 0, 0);
     opacity: 1;
 }
 
-/*------THE ACTIVITY SITE -----*/
+/*------ CSS FOR THE ACTIVITY SITE -----*/
 /* Main container for basketball page */
 /*Source: https://www.w3schools.com/css/css3_flexbox.asp*/
 .Basketball-site {
@@ -966,13 +962,11 @@ background-color: rgb(128, 0, 0);
     max-width: 400px; 
     text-align: left; /
 }
-
 .health ul li {
     margin: 20px 0;
     font-size: 1rem;
     color: #171615; 
 }
-
 /* Image Gallery */
 /*inspiration from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout*/
 .Basketball-site .image-gallery, .image-gallery2 {
@@ -1055,7 +1049,7 @@ background-color: rgb(128, 0, 0);
     color: #ff9800;
 }
 
-/*-----------THE ACCESSIBILITY SITE---------- */
+/*----------- CSS FOR THE ACCESSIBILITY SITE---------- */
 .accessibility-main {
     margin: auto;
     margin-bottom: 6rem;
@@ -1149,7 +1143,7 @@ background-color: rgb(128, 0, 0);
     object-fit: cover;
 }
 
-/* Media Queries for responsiveness Website */
+/* ------ Media Queries for responsiveness Website -----*/
 /* For narrow screens (mobile) */
 @media (max-width: 768px) {
     header {
