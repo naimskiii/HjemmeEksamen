@@ -946,6 +946,23 @@ background-color: rgb(128, 0, 0);
     color: #000000;
     text-decoration: underline;
 }
+
+
+
+.health ul {
+    list-style: disc inside; 
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px; 
+    text-align: left; /
+}
+
+.health ul li {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #171615; 
+}
+
 /* Image Gallery */
 .Basketball-site .image-gallery, .image-gallery2 {
     display: grid;
@@ -1001,15 +1018,7 @@ background-color: rgb(128, 0, 0);
 .Basketball-site .footer-links ul li a:hover {
     color: #ff9800;
 }
-.Basketball-site .social-media a {
-    color: #ff9a16;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 24px;
-}
-.Basketball-site .social-media a:hover {
-    color: #ff9800;
-}
+
 .Basketball-site .legal-info {
     font-size: 14px;
     color: #292727;
